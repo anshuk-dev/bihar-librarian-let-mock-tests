@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihar Librarian LET 50 Mock Tests Series | बिहार पुस्तकालय पात्रता परीक्षा</title>
+  <meta name="description" content="50 Full-length Bilingual (English & Hindi) Mock Test Papers for Bihar School Examination Board (BSEB) Library Eligibility Test (LET/SLET). 7,500 unique MCQs with answers & detailed solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Devanagari', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            bihar: {
+              gold: '#f59e0b',
+              green: '#047857',
+              navy: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col antialiased transition-colors duration-200">
+
+  <!-- TOP ANNOUNCEMENT BANNER -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-bihar-navy via-brand-900 to-bihar-green text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-block px-2 py-0.5 bg-amber-400 text-slate-900 font-bold rounded-full text-xs">OFFICIAL SYLLABUS</span>
+      <span>बिहार विद्यालय परीक्षा समिति (BSEB) — पुस्तकालय पात्रता परीक्षा (LET) 50 मॉडल पेपर शृंखला (7,500 अद्वितीय प्रश्न)</span>
+      <span class="hidden md:inline text-amber-200">| 100% Free & Open Access</span>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo & Title -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-bihar-green flex items-center justify-center text-white font-black text-xl shadow-md">
+          📚
+        </div>
+        <div>
+          <span class="text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
+            Bihar LET <span class="text-brand-600 dark:text-brand-400">Mock 50</span>
+          </span>
+          <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium hidden sm:block">
+            7,500 Bilingual MCQs • 50 Full Booklets
+          </p>
+        </div>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <a href="#papers-section" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">All 50 Papers</a>
+        <a href="#syllabus-section" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Syllabus Breakdown</a>
+        <a href="#practice-section" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Online Practice
+        </a>
+        <a href="#stats-section" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Verification Audit</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- View Mode Switcher: Desktop vs Mobile Layout Preview -->
+        <div class="hidden sm:flex items-center bg-slate-100 dark:bg-slate-800 rounded-lg p-1 border border-slate-200 dark:border-slate-700 text-xs">
+          <button id="view-grid-btn" onclick="setViewMode('grid')" class="px-2.5 py-1 rounded-md font-semibold bg-white dark:bg-slate-700 shadow-xs text-brand-600 dark:text-brand-300 transition-all">
+            Grid View
+          </button>
+          <button id="view-list-btn" onclick="setViewMode('list')" class="px-2.5 py-1 rounded-md font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+            Compact List
+          </button>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" onclick="toggleTheme()" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Dark Mode">
+          <svg id="moon-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          <svg id="sun-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </button>
+
+        <!-- GitHub Repository Button -->
+        <a href="https://github.com/anshuk-dev/bihar-librarian-let-mock-tests" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-900 hover:bg-slate-800 dark:bg-white dark:hover:bg-slate-100 dark:text-slate-900 text-white rounded-lg text-xs sm:text-sm font-semibold shadow-xs transition">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span class="hidden sm:inline">GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100 dark:from-slate-900 dark:via-slate-900/80 dark:to-slate-950 border-b border-slate-200 dark:border-slate-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 dark:bg-brand-950/60 border border-brand-200 dark:border-brand-800 text-brand-700 dark:text-brand-300 text-xs sm:text-sm font-semibold mb-6 shadow-xs">
+        <span>🏆 Complete 50 Mock Exam Repository</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+        <span>Bilingual English & Hindi</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight max-w-4xl mx-auto">
+        बिहार विद्यालय पुस्तकालय पात्रता परीक्षा <br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-indigo-600 to-bihar-green">
+          (Bihar LET / SLET) 50 Model Papers
+        </span>
+      </h1>
+
+      <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        50 सम्पूर्ण मॉडल टेस्ट बुकलेट्स (150 प्रश्न प्रति पेपर = <b>7,500 प्रामाणिक एवं अद्वितीय प्रश्न</b>), प्रत्येक प्रश्न, चारों विकल्प और सम्पूर्ण व्याख्यात्मक हल हिंदी एवं अंग्रेजी दोनों भाषाओं में।
+      </p>
+
+      <!-- Key Stat Badges -->
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
+        <div class="bg-white dark:bg-slate-800/80 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-600 dark:text-brand-400">50</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Full Mock Papers</div>
+        </div>
+        <div class="bg-white dark:bg-slate-800/80 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">7,500</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Unique Bilingual MCQs</div>
+        </div>
+        <div class="bg-white dark:bg-slate-800/80 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-600 dark:text-amber-400">1,740</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Printable Pages</div>
+        </div>
+        <div class="bg-white dark:bg-slate-800/80 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-extrabold text-purple-600 dark:text-purple-400">0</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Duplicates (SHA-256)</div>
+        </div>
+      </div>
+
+      <!-- Action CTA Buttons -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="#papers-section" class="w-full sm:w-auto px-6 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+          <span>डाउनलोड एवं पेपर ब्राउज़ करें</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </a>
+        <a href="#practice-section" class="w-full sm:w-auto px-6 py-3.5 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/80 transition-all flex items-center justify-center gap-2">
+          <span>लाइव टेस्ट प्रैक्टिस (10 Qs)</span>
+          <span class="text-xs bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200 font-bold px-2 py-0.5 rounded-full">Interactive</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SYLLABUS SECTION -->
+  <section id="syllabus-section" class="py-12 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+          पाठ्यक्रम संरचना एवं अंक विभाजन (Exam Syllabus & Pattern)
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400">
+          प्रत्येक मॉडल पेपर BSEB द्वारा निर्धारित 150 प्रश्नों (150 अंक) के आधिकारिक प्रारूप पर पूर्णतः आधारित है।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- Part 1: LIS -->
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-700">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">भाग 1 / Part 1</span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">पुस्तकालय एवं सूचना विज्ञान (LIS)</h3>
+            </div>
+            <span class="px-3 py-1 bg-brand-100 dark:bg-brand-900/60 text-brand-800 dark:text-brand-200 text-xs font-bold rounded-full">
+              Q1 से Q100 (100 अंक)
+            </span>
+          </div>
+
+          <ul class="mt-4 space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">U1</span>
+              <div><b>इकाई 1 (Q01–Q20):</b> पुस्तकालय के सामाजिक एवं ऐतिहासिक आधार, पाँच सूत्र, अधिनियम, आन्दोलन एवं संघ (ILA, IASLIC, IFLA, ALA)।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">U2</span>
+              <div><b>इकाई 2 (Q21–Q40):</b> ज्ञान संगठन, वर्गीकरण (DDC, CC, UDC), सूचीकरण (AACR-2, CCC, MARC 21, RDA)।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">U3</span>
+              <div><b>इकाई 3 (Q41–Q60):</b> सूचना स्रोत (प्राथमिक/द्वितीयक/तृतीयक), संदर्भ सेवा, प्रबंधन सिद्धांत (फेयोल, टेलर, TQM, सर्कुलेशन)।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">U4</span>
+              <div><b>इकाई 4 (Q61–Q80):</b> सूचना सेवाएं (CAS, SDI, DDS), पुनर्प्राप्ति तकनीक, राष्ट्रीय नेटवर्क एवं कंसोर्टिया (INFLIBNET, DELNET, e-ShodhSindhu)।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">U5</span>
+              <div><b>इकाई 5 (Q81–Q100):</b> पुस्तकालय स्वचालन, ओपन-सोर्स सॉफ्टवेयर (Koha, SOUL, DSpace), सिमेंटिक वेब, AI एवं साइबर सुरक्षा।</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Part 2: General Studies -->
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-700">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">भाग 2 / Part 2</span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">सामान्य ज्ञान एवं सामान्य अध्ययन (GK/GS)</h3>
+            </div>
+            <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200 text-xs font-bold rounded-full">
+              Q101 से Q150 (50 अंक)
+            </span>
+          </div>
+
+          <ul class="mt-4 space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">G1</span>
+              <div><b>मॉड्यूल 1 (Q101–Q110):</b> बिहार विशेष — इतिहास, भूगोल, नदियाँ, खनिज, कृषि, साक्षरता, प्रमुख विभूति एवं सरकारी योजनाएं।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">G2</span>
+              <div><b>मॉड्यूल 2 (Q111–Q120):</b> भारतीय राजव्यवस्था एवं संविधान — प्रस्तावना, मौलिक अधिकार, संसद, पंचायती राज, न्यायपालिका।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">G3</span>
+              <div><b>मॉड्यूल 3 (Q121–Q130):</b> भारतीय राष्ट्रीय आंदोलन एवं स्वतंत्रता संग्राम — 1857 की क्रांति, चंपारण सत्याग्रह, भारत छोड़ो आंदोलन।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">G4</span>
+              <div><b>मॉड्यूल 4 (Q131–Q140):</b> सामान्य विज्ञान, पर्यावरण एवं पारिस्थितिकी — भौतिकी, रसायन, जीव विज्ञान, प्रदूषण एवं जैव विविधता।</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="w-5 h-5 rounded-md bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">G5</span>
+              <div><b>मॉड्यूल 5 (Q141–Q150):</b> तार्किक क्षमता एवं मानसिक योग्यता — कोडिंग-डिकोडिंग, शृंखला, दिशा ज्ञान, अनुपात एवं औसत।</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAPERS BROWSER SECTION -->
+  <section id="papers-section" class="py-12 bg-slate-50 dark:bg-slate-950 flex-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">PDF Repository</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+            सभी 50 मॉडल पेपर बुकलेट्स (Download & Read)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+            प्रत्येक पीडीएफ में 150 द्विभाषी प्रश्न, उत्तर कुंजी (Answer Grid) एवं सम्पूर्ण विस्तृत व्याख्याएं संलग्न हैं।
+          </p>
+        </div>
+
+        <!-- Filter Count -->
+        <div id="results-count" class="text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 shadow-xs self-start md:self-auto">
+          Showing 50 of 50 papers
+        </div>
+      </div>
+
+      <!-- Search & Filter Controls -->
+      <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8 space-y-4">
+        
+        <!-- Search bar -->
+        <div class="relative">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="पेपर संख्या से खोजें (उदा. 05, Mock 12, 30)..."
+            class="w-full pl-10 pr-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-900 dark:text-white"
+            oninput="handleSearch()"
+          >
+          <svg class="w-5 h-5 text-slate-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+
+        <!-- Group Filter Buttons -->
+        <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs font-semibold custom-scrollbar">
+          <button onclick="filterGroup('all')" class="group-filter-btn px-3 py-1.5 rounded-lg bg-brand-600 text-white shrink-0 shadow-xs" data-group="all">
+            All 50 Papers
+          </button>
+          <button onclick="filterGroup(1)" class="group-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 shrink-0" data-group="1">
+            Papers 01 – 10
+          </button>
+          <button onclick="filterGroup(2)" class="group-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 shrink-0" data-group="2">
+            Papers 11 – 20
+          </button>
+          <button onclick="filterGroup(3)" class="group-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 shrink-0" data-group="3">
+            Papers 21 – 30
+          </button>
+          <button onclick="filterGroup(4)" class="group-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 shrink-0" data-group="4">
+            Papers 31 – 40
+          </button>
+          <button onclick="filterGroup(5)" class="group-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 shrink-0" data-group="5">
+            Papers 41 – 50
+          </button>
+        </div>
+      </div>
+
+      <!-- Papers Container: Grid View by default -->
+      <div id="papers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Compact List View (Hidden by default) -->
+      <div id="papers-list" class="hidden space-y-2">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TEST / PRACTICE SAMPLER SECTION -->
+  <section id="practice-section" class="py-14 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-8">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 text-xs font-bold mb-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          Live Self-Assessment
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+          द्विभाषी ऑनलाइन अभ्यास (Interactive Sampler Quiz)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+          परीक्षा से पूर्व अपनी तैयारी की जांच करें। 10 प्रश्नों के इस मिनी टेस्ट में तुरंत सही उत्तर व व्याख्या देखें।
+        </p>
+      </div>
+
+      <!-- Quiz Card Container -->
+      <div class="bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
+        
+        <!-- Quiz Header Info -->
+        <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-200 dark:border-slate-700">
+          <div class="text-xs font-bold text-slate-500 dark:text-slate-400">
+            प्रश्न <span id="quiz-current-num" class="text-brand-600 dark:text-brand-400 text-base font-extrabold">1</span> of 10
+          </div>
+          <div class="text-xs font-bold px-2.5 py-1 bg-brand-100 dark:bg-brand-900/60 text-brand-800 dark:text-brand-200 rounded-lg" id="quiz-unit-badge">
+            LIS Unit 1
+          </div>
+          <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400" id="quiz-score-badge">
+            Score: 0 / 10
+          </div>
+        </div>
+
+        <!-- Question Prompt (Bilingual) -->
+        <div class="space-y-2 mb-6">
+          <p id="quiz-q-en" class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+            Loading question...
+          </p>
+          <p id="quiz-q-hi" class="text-sm sm:text-base font-semibold text-brand-700 dark:text-brand-300">
+            प्रश्न लोड हो रहा है...
+          </p>
+        </div>
+
+        <!-- Options Container -->
+        <div id="quiz-options-container" class="space-y-2.5 mb-6">
+          <!-- Dynamic options buttons -->
+        </div>
+
+        <!-- Explanation Container (Revealed upon answering) -->
+        <div id="quiz-exp-container" class="hidden p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 mb-6 text-xs sm:text-sm space-y-2">
+          <div class="font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5" id="quiz-result-msg">
+            ✓ सही उत्तर!
+          </div>
+          <p id="quiz-exp-en" class="text-slate-700 dark:text-slate-300"></p>
+          <p id="quiz-exp-hi" class="text-slate-600 dark:text-slate-400 italic"></p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex items-center justify-between pt-2">
+          <button id="quiz-prev-btn" onclick="prevQuestion()" class="px-4 py-2 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 rounded-lg text-xs font-bold transition disabled:opacity-40">
+            ← पिछला प्रश्न
+          </button>
+          <button id="quiz-next-btn" onclick="nextQuestion()" class="px-5 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-bold transition">
+            अगला प्रश्न →
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AUDIT & VERIFICATION STATS -->
+  <section id="stats-section" class="py-12 bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-r from-brand-900 to-bihar-navy rounded-3xl p-8 sm:p-10 text-white shadow-xl relative overflow-hidden">
+        <div class="relative z-10 max-w-3xl">
+          <span class="inline-block px-3 py-1 bg-amber-400/20 border border-amber-400/40 text-amber-300 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+            Cryptographic Quality Assurance
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight">
+            100% Unique Questions Guarantee (Zero Collisions)
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+            इस सम्पूर्ण 50 मॉडल पेपर शृंखला (7,500 प्रश्न) में किसी भी प्रश्न की पुनरावृत्ति नहीं है। प्रत्येक प्रश्न के दोनों भाषाओं के पाठ को SHA-256 हैशिंग द्वारा <code class="bg-black/30 px-2 py-0.5 rounded text-amber-300">question_dedup_registry.json</code> में सत्यापित किया गया है।
+          </p>
+          <div class="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm font-semibold">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+              <span>7,500 Registered Unique Hashes</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+              <span>0 Internal Collisions Detected</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+              <span>Audited ReportLab PDF Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8 text-xs text-slate-500 dark:text-slate-400 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+      <p class="font-semibold text-slate-700 dark:text-slate-300">
+        बिहार विद्यालय पुस्तकालय पात्रता परीक्षा (LET / SLET) — 50 द्विभाषी मॉडल प्रश्न पत्र शृंखला
+      </p>
+      <p>
+        Prepared for Candidates appearing in BSEB Bihar Librarian Recruitment & SLET Exams.
+      </p>
+      <p class="text-slate-400 dark:text-slate-500">
+        Open Educational Resource (OER) • Hosted on GitHub Pages • Free to Download, Share & Print
+      </p>
+    </div>
+  </footer>
+
+  <!-- PDF VIEWER MODAL (DESKTOP & MOBILE COMPATIBLE) -->
+  <div id="pdf-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4" onclick="closeModal(event)">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl w-full max-w-5xl h-[92vh] flex flex-col shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800" onclick="event.stopPropagation()">
+      
+      <!-- Modal Header -->
+      <div class="px-4 sm:px-6 py-3 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between bg-slate-50 dark:bg-slate-800/80">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="text-xl">📄</span>
+          <div class="truncate">
+            <h3 id="modal-title" class="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate">
+              Previewing Document
+            </h3>
+            <p id="modal-subtitle" class="text-xs text-slate-500 dark:text-slate-400 truncate">
+              150 MCQs • Bilingual English + Hindi
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 shrink-0">
+          <a id="modal-download-btn" href="#" download class="px-3 py-1.5 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-bold flex items-center gap-1 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Download</span>
+          </a>
+          <button onclick="closeModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (PDF Viewer) -->
+      <div class="flex-1 bg-slate-100 dark:bg-slate-950 relative">
+        <iframe id="modal-iframe" src="" class="w-full h-full border-0" title="PDF Document Viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT DATA & APP LOGIC -->
+  <script>
+    const PAPERS = [{"num": 1, "filename": "Bihar_Librarian_Bilingual_Mock_01.pdf", "pages": 32, "size_kb": 187.5, "title_en": "Bihar Librarian LET Mock Test Paper 01", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 01", "group": 1}, {"num": 2, "filename": "Bihar_Librarian_Bilingual_Mock_02.pdf", "pages": 40, "size_kb": 242.9, "title_en": "Bihar Librarian LET Mock Test Paper 02", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 02", "group": 1}, {"num": 3, "filename": "Bihar_Librarian_Bilingual_Mock_03.pdf", "pages": 32, "size_kb": 197.6, "title_en": "Bihar Librarian LET Mock Test Paper 03", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 03", "group": 1}, {"num": 4, "filename": "Bihar_Librarian_Bilingual_Mock_04.pdf", "pages": 32, "size_kb": 199.1, "title_en": "Bihar Librarian LET Mock Test Paper 04", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 04", "group": 1}, {"num": 5, "filename": "Bihar_Librarian_Bilingual_Mock_05.pdf", "pages": 33, "size_kb": 204.6, "title_en": "Bihar Librarian LET Mock Test Paper 05", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 05", "group": 1}, {"num": 6, "filename": "Bihar_Librarian_Bilingual_Mock_06.pdf", "pages": 33, "size_kb": 207.2, "title_en": "Bihar Librarian LET Mock Test Paper 06", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 06", "group": 1}, {"num": 7, "filename": "Bihar_Librarian_Bilingual_Mock_07.pdf", "pages": 33, "size_kb": 206.8, "title_en": "Bihar Librarian LET Mock Test Paper 07", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 07", "group": 1}, {"num": 8, "filename": "Bihar_Librarian_Bilingual_Mock_08.pdf", "pages": 34, "size_kb": 213.7, "title_en": "Bihar Librarian LET Mock Test Paper 08", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 08", "group": 1}, {"num": 9, "filename": "Bihar_Librarian_Bilingual_Mock_09.pdf", "pages": 33, "size_kb": 204.6, "title_en": "Bihar Librarian LET Mock Test Paper 09", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 09", "group": 1}, {"num": 10, "filename": "Bihar_Librarian_Bilingual_Mock_10.pdf", "pages": 33, "size_kb": 209.4, "title_en": "Bihar Librarian LET Mock Test Paper 10", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 10", "group": 1}, {"num": 11, "filename": "Bihar_Librarian_Bilingual_Mock_11.pdf", "pages": 32, "size_kb": 206.2, "title_en": "Bihar Librarian LET Mock Test Paper 11", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 11", "group": 2}, {"num": 12, "filename": "Bihar_Librarian_Bilingual_Mock_12.pdf", "pages": 35, "size_kb": 213.4, "title_en": "Bihar Librarian LET Mock Test Paper 12", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 12", "group": 2}, {"num": 13, "filename": "Bihar_Librarian_Bilingual_Mock_13.pdf", "pages": 35, "size_kb": 210.4, "title_en": "Bihar Librarian LET Mock Test Paper 13", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 13", "group": 2}, {"num": 14, "filename": "Bihar_Librarian_Bilingual_Mock_14.pdf", "pages": 35, "size_kb": 207.8, "title_en": "Bihar Librarian LET Mock Test Paper 14", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 14", "group": 2}, {"num": 15, "filename": "Bihar_Librarian_Bilingual_Mock_15.pdf", "pages": 34, "size_kb": 207.3, "title_en": "Bihar Librarian LET Mock Test Paper 15", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 15", "group": 2}, {"num": 16, "filename": "Bihar_Librarian_Bilingual_Mock_16.pdf", "pages": 35, "size_kb": 211.3, "title_en": "Bihar Librarian LET Mock Test Paper 16", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 16", "group": 2}, {"num": 17, "filename": "Bihar_Librarian_Bilingual_Mock_17.pdf", "pages": 35, "size_kb": 210.7, "title_en": "Bihar Librarian LET Mock Test Paper 17", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 17", "group": 2}, {"num": 18, "filename": "Bihar_Librarian_Bilingual_Mock_18.pdf", "pages": 35, "size_kb": 209.5, "title_en": "Bihar Librarian LET Mock Test Paper 18", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 18", "group": 2}, {"num": 19, "filename": "Bihar_Librarian_Bilingual_Mock_19.pdf", "pages": 35, "size_kb": 211.1, "title_en": "Bihar Librarian LET Mock Test Paper 19", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 19", "group": 2}, {"num": 20, "filename": "Bihar_Librarian_Bilingual_Mock_20.pdf", "pages": 35, "size_kb": 213.3, "title_en": "Bihar Librarian LET Mock Test Paper 20", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 20", "group": 2}, {"num": 21, "filename": "Bihar_Librarian_Bilingual_Mock_21.pdf", "pages": 35, "size_kb": 212.1, "title_en": "Bihar Librarian LET Mock Test Paper 21", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 21", "group": 3}, {"num": 22, "filename": "Bihar_Librarian_Bilingual_Mock_22.pdf", "pages": 35, "size_kb": 211.8, "title_en": "Bihar Librarian LET Mock Test Paper 22", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 22", "group": 3}, {"num": 23, "filename": "Bihar_Librarian_Bilingual_Mock_23.pdf", "pages": 35, "size_kb": 213.9, "title_en": "Bihar Librarian LET Mock Test Paper 23", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 23", "group": 3}, {"num": 24, "filename": "Bihar_Librarian_Bilingual_Mock_24.pdf", "pages": 35, "size_kb": 212.4, "title_en": "Bihar Librarian LET Mock Test Paper 24", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 24", "group": 3}, {"num": 25, "filename": "Bihar_Librarian_Bilingual_Mock_25.pdf", "pages": 35, "size_kb": 212.5, "title_en": "Bihar Librarian LET Mock Test Paper 25", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 25", "group": 3}, {"num": 26, "filename": "Bihar_Librarian_Bilingual_Mock_26.pdf", "pages": 35, "size_kb": 212.5, "title_en": "Bihar Librarian LET Mock Test Paper 26", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 26", "group": 3}, {"num": 27, "filename": "Bihar_Librarian_Bilingual_Mock_27.pdf", "pages": 35, "size_kb": 209.6, "title_en": "Bihar Librarian LET Mock Test Paper 27", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 27", "group": 3}, {"num": 28, "filename": "Bihar_Librarian_Bilingual_Mock_28.pdf", "pages": 35, "size_kb": 209.8, "title_en": "Bihar Librarian LET Mock Test Paper 28", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 28", "group": 3}, {"num": 29, "filename": "Bihar_Librarian_Bilingual_Mock_29.pdf", "pages": 35, "size_kb": 215.0, "title_en": "Bihar Librarian LET Mock Test Paper 29", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 29", "group": 3}, {"num": 30, "filename": "Bihar_Librarian_Bilingual_Mock_30.pdf", "pages": 35, "size_kb": 212.2, "title_en": "Bihar Librarian LET Mock Test Paper 30", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 30", "group": 3}, {"num": 31, "filename": "Bihar_Librarian_Bilingual_Mock_31.pdf", "pages": 35, "size_kb": 212.0, "title_en": "Bihar Librarian LET Mock Test Paper 31", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 31", "group": 4}, {"num": 32, "filename": "Bihar_Librarian_Bilingual_Mock_32.pdf", "pages": 35, "size_kb": 215.4, "title_en": "Bihar Librarian LET Mock Test Paper 32", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 32", "group": 4}, {"num": 33, "filename": "Bihar_Librarian_Bilingual_Mock_33.pdf", "pages": 36, "size_kb": 214.2, "title_en": "Bihar Librarian LET Mock Test Paper 33", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 33", "group": 4}, {"num": 34, "filename": "Bihar_Librarian_Bilingual_Mock_34.pdf", "pages": 35, "size_kb": 212.5, "title_en": "Bihar Librarian LET Mock Test Paper 34", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 34", "group": 4}, {"num": 35, "filename": "Bihar_Librarian_Bilingual_Mock_35.pdf", "pages": 35, "size_kb": 214.5, "title_en": "Bihar Librarian LET Mock Test Paper 35", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 35", "group": 4}, {"num": 36, "filename": "Bihar_Librarian_Bilingual_Mock_36.pdf", "pages": 35, "size_kb": 214.6, "title_en": "Bihar Librarian LET Mock Test Paper 36", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 36", "group": 4}, {"num": 37, "filename": "Bihar_Librarian_Bilingual_Mock_37.pdf", "pages": 35, "size_kb": 216.2, "title_en": "Bihar Librarian LET Mock Test Paper 37", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 37", "group": 4}, {"num": 38, "filename": "Bihar_Librarian_Bilingual_Mock_38.pdf", "pages": 36, "size_kb": 220.0, "title_en": "Bihar Librarian LET Mock Test Paper 38", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 38", "group": 4}, {"num": 39, "filename": "Bihar_Librarian_Bilingual_Mock_39.pdf", "pages": 35, "size_kb": 214.0, "title_en": "Bihar Librarian LET Mock Test Paper 39", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 39", "group": 4}, {"num": 40, "filename": "Bihar_Librarian_Bilingual_Mock_40.pdf", "pages": 35, "size_kb": 215.0, "title_en": "Bihar Librarian LET Mock Test Paper 40", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 40", "group": 4}, {"num": 41, "filename": "Bihar_Librarian_Bilingual_Mock_41.pdf", "pages": 35, "size_kb": 213.8, "title_en": "Bihar Librarian LET Mock Test Paper 41", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 41", "group": 5}, {"num": 42, "filename": "Bihar_Librarian_Bilingual_Mock_42.pdf", "pages": 35, "size_kb": 214.6, "title_en": "Bihar Librarian LET Mock Test Paper 42", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 42", "group": 5}, {"num": 43, "filename": "Bihar_Librarian_Bilingual_Mock_43.pdf", "pages": 36, "size_kb": 217.9, "title_en": "Bihar Librarian LET Mock Test Paper 43", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 43", "group": 5}, {"num": 44, "filename": "Bihar_Librarian_Bilingual_Mock_44.pdf", "pages": 36, "size_kb": 220.2, "title_en": "Bihar Librarian LET Mock Test Paper 44", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 44", "group": 5}, {"num": 45, "filename": "Bihar_Librarian_Bilingual_Mock_45.pdf", "pages": 35, "size_kb": 218.1, "title_en": "Bihar Librarian LET Mock Test Paper 45", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 45", "group": 5}, {"num": 46, "filename": "Bihar_Librarian_Bilingual_Mock_46.pdf", "pages": 35, "size_kb": 216.8, "title_en": "Bihar Librarian LET Mock Test Paper 46", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 46", "group": 5}, {"num": 47, "filename": "Bihar_Librarian_Bilingual_Mock_47.pdf", "pages": 36, "size_kb": 220.7, "title_en": "Bihar Librarian LET Mock Test Paper 47", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 47", "group": 5}, {"num": 48, "filename": "Bihar_Librarian_Bilingual_Mock_48.pdf", "pages": 35, "size_kb": 219.3, "title_en": "Bihar Librarian LET Mock Test Paper 48", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 48", "group": 5}, {"num": 49, "filename": "Bihar_Librarian_Bilingual_Mock_49.pdf", "pages": 36, "size_kb": 224.2, "title_en": "Bihar Librarian LET Mock Test Paper 49", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 49", "group": 5}, {"num": 50, "filename": "Bihar_Librarian_Bilingual_Mock_50.pdf", "pages": 38, "size_kb": 233.8, "title_en": "Bihar Librarian LET Mock Test Paper 50", "title_hi": "बिहार पुस्तकालय पात्रता परीक्षा मॉडल पेपर 50", "group": 5}];
+    const QUESTIONS = [{"id": 1, "unit": "LIS Unit 1: Foundations & 5 Laws", "q_en": "Who is universally recognized as the Father of Library Science in India?", "q_hi": "भारत में पुस्तकालय विज्ञान के जनक (Father of Library Science) के रूप में किसे सार्वभौमिक रूप से मान्यता प्राप्त है?", "options_en": ["Dr. S. R. Ranganathan", "Melvil Dewey", "B. S. Kesavan", "P. N. Kaula"], "options_hi": ["डॉ. एस. आर. रंगनाथन", "मेलविल डेवी", "बी. एस. केशवन", "पी. एन. कौला"], "correct": 0, "exp_en": "Dr. S. R. Ranganathan (1892–1972) formulated the Five Laws of Library Science, Colon Classification (CC), and Classified Catalogue Code (CCC).", "exp_hi": "डॉ. एस. आर. रंगनाथन (1892–1972) को भारत में पुस्तकालय विज्ञान का जनक माना जाता है; उन्होंने पुस्तकालय विज्ञान के 5 सूत्रों और कोलन वर्गीकरण का प्रतिपादन किया।"}, {"id": 2, "unit": "LIS Unit 1: Five Laws of Library Science", "q_en": "Which of the Five Laws of Library Science states: 'Save the Time of the Reader'?", "q_hi": "पुस्तकालय विज्ञान के पाँच सूत्रों में से कौन सा सूत्र कहता है: 'पाठक का समय बचाएं' (Save the Time of the Reader)?", "options_en": ["First Law", "Second Law", "Fourth Law", "Fifth Law"], "options_hi": ["पहला नियम", "दूसरा नियम", "चौथा नियम", "पाँचवाँ नियम"], "correct": 2, "exp_en": "Fourth Law ('Save the Time of the Reader') advocates for open access, classified shelving, rapid charging systems, and computerized cataloging.", "exp_hi": "चौथा नियम ('पाठक का समय बचाएं') ओपन एक्सेस, क्लासिफाइड शेल्फिंग, और कम्प्यूटरीकृत कैटलॉगिंग पर बल देता है।"}, {"id": 3, "unit": "LIS Unit 2: Classification (DDC)", "q_en": "In the Dewey Decimal Classification (DDC), which main class number represents 'Computer Science, Information & General Works'?", "q_hi": "डेवी दशमलव वर्गीकरण (DDC) में कौन सा मुख्य वर्ग 'कंप्यूटर विज्ञान, सूचना एवं सामान्य कार्य' का प्रतिनिधित्व करता है?", "options_en": ["000", "100", "300", "500"], "options_hi": ["000", "100", "300", "500"], "correct": 0, "exp_en": "In DDC, 000 = Computer science, information & general works; 100 = Philosophy & psychology; 300 = Social sciences; 500 = Science.", "exp_hi": "DDC में 000 वर्ग कंप्यूटर विज्ञान, ज्ञान और सामान्य रचनाओं के लिए आरक्षित है।"}, {"id": 4, "unit": "LIS Unit 2: Cataloguing Standards", "q_en": "What does the library cataloging acronym 'MARC' stand for?", "q_hi": "पुस्तकालय कैटलॉगिंग में 'MARC' का पूर्ण रूप (Full Form) क्या है?", "options_en": ["Machine-Readable Cataloging", "Multi-Access Reference Catalog", "Manual Archival Record Code", "Modern Automated Retrieval Card"], "options_hi": ["मशीन-रीडेबल कैटलॉगिंग", "मल्टी-एक्सेस संदर्भ कैटलॉग", "मैनुअल आर्काइवल रिकॉर्ड कोड", "मॉडर्न ऑटोमेटेड रिट्रीवल कार्ड"], "correct": 0, "exp_en": "MARC (Machine-Readable Cataloging) was initiated in the 1960s by Henriette Avram at the Library of Congress to encode bibliographic data.", "exp_hi": "MARC का अर्थ Machine-Readable Cataloging है; इसे 1960 के दशक में लाइब्रेरी ऑफ कांग्रेस में हेनरीट अवराम द्वारा विकसित किया गया था।"}, {"id": 5, "unit": "LIS Unit 3: Information Sources", "q_en": "A bibliography of bibliographies is categorized as which type of information source?", "q_hi": "ग्रंथसूचियों की ग्रंथसूची (Bibliography of Bibliographies) को किस प्रकार के सूचना स्रोत के रूप में वर्गीकृत किया जाता है?", "options_en": ["Primary Source", "Secondary Source", "Tertiary Source", "Non-Documentary Source"], "options_hi": ["प्राथमिक स्रोत", "द्वितीयक स्रोत", "तृतीयक स्रोत", "गैर-दस्तावेजी स्रोत"], "correct": 2, "exp_en": "Tertiary sources contain information distilled and collected from primary and secondary sources (e.g. bibliography of bibliographies, directories).", "exp_hi": "ग्रंथसूचियों की ग्रंथसूची तृतीयक (Tertiary) स्रोत मानी जाती है, जो प्राथमिक और द्वितीयक स्रोतों को खोजने में मदद करती है।"}, {"id": 6, "unit": "LIS Unit 4: Resource Sharing & Consortia", "q_en": "What is the name of India's national electronic thesis and dissertation (ETD) repository maintained by INFLIBNET Centre?", "q_hi": "INFLIBNET केंद्र द्वारा अनुरक्षित भारत के राष्ट्रीय इलेक्ट्रॉनिक शोध प्रबंध (ETD) रिपॉजिटरी का क्या नाम है?", "options_en": ["Shodhganga", "ShodhGangotri", "e-ShodhSindhu", "N-LIST"], "options_hi": ["शोधगंगा", "शोधगंगोत्री", "ई-शोधसिंधु", "एन-लिस्ट"], "correct": 0, "exp_en": "Shodhganga is the Indian digital repository of full-text doctoral dissertations, containing over 500,000 theses from Indian universities.", "exp_hi": "शोधगंगा (INFLIBNET) भारत का राष्ट्रीय डिजिटल भंडार है जहाँ विश्वविद्यालयों की 5 लाख से अधिक पीएचडी थीसिस उपलब्ध हैं।"}, {"id": 7, "unit": "LIS Unit 5: Library Automation Software", "q_en": "Which open-source Integrated Library System (ILS) was originally developed in 1999 by Katipo Communications for the Horowhenua Library Trust in New Zealand?", "q_hi": "1999 में न्यूजीलैंड के होरोवेनुआ लाइब्रेरी ट्रस्ट के लिए कातिपो कम्युनिकेशंस द्वारा मूल रूप से कौन सा ओपन-सोर्स ILS विकसित किया गया था?", "options_en": ["Koha", "NewGenLib", "SOUL", "LIBSYS"], "options_hi": ["कोहा (Koha)", "न्यूजेनलॉिब (NewGenLib)", "सोल (SOUL)", "लिबसिस (LIBSYS)"], "correct": 0, "exp_en": "Koha was the world's first open-source integrated library system (ILS), released in 2000 in New Zealand.", "exp_hi": "Koha विश्व का पहला ओपन-सोर्स एकीकृत पुस्तकालय प्रबंधन सॉफ्टवेयर (ILS) है, जिसे 1999 में न्यूजीलैंड में विकसित किया गया था।"}, {"id": 8, "unit": "GS Module 1: Bihar Special", "q_en": "In which year did Bihar enact its State Public Libraries and Information Centres Act?", "q_hi": "बिहार ने किस वर्ष में अपने राज्य सार्वजनिक पुस्तकालय और सूचना केंद्र अधिनियम (Public Libraries Act) को अधिनियमित किया?", "options_en": ["1948", "1979", "2008", "2015"], "options_hi": ["1948", "1979", "2008", "2015"], "correct": 2, "exp_en": "The Bihar State Public Libraries and Information Centres Act was passed in 2008 (Act No. 20 of 2008).", "exp_hi": "बिहार राज्य सार्वजनिक पुस्तकालय एवं सूचना केंद्र अधिनियम वर्ष 2008 में बिहार विधानमंडल द्वारा पारित किया गया था।"}, {"id": 9, "unit": "GS Module 2: Indian Polity", "q_en": "Which Constitutional Amendment Act made the Right to Education a Fundamental Right under Article 21A of the Indian Constitution?", "q_hi": "किस संविधान संशोधन अधिनियम ने भारतीय संविधान के अनुच्छेद 21A के तहत शिक्षा के अधिकार को मौलिक अधिकार बनाया?", "options_en": ["42nd Amendment Act (1976)", "44th Amendment Act (1978)", "86th Amendment Act (2002)", "91st Amendment Act (2003)"], "options_hi": ["42वाँ संशोधन (1976)", "44वाँ संशोधन (1978)", "86वाँ संशोधन (2002)", "91वाँ संशोधन (2003)"], "correct": 2, "exp_en": "The 86th Constitutional Amendment Act of 2002 inserted Article 21A, ensuring free and compulsory education for children aged 6 to 14.", "exp_hi": "86वें संविधान संशोधन 2002 द्वारा अनुच्छेद 21A जोड़ा गया, जिसने 6 से 14 वर्ष के बच्चों के लिए शिक्षा को मौलिक अधिकार बनाया।"}, {"id": 10, "unit": "GS Module 5: Reasoning & Aptitude", "q_en": "Find the next number in the series: 2, 6, 12, 20, 30, ?", "q_hi": "शृंखला में अगली संख्या ज्ञात कीजिए: 2, 6, 12, 20, 30, ?", "options_en": ["38", "40", "42", "44"], "options_hi": ["38", "40", "42", "44"], "correct": 2, "exp_en": "Differences are +4, +6, +8, +10, +12. Therefore, 30 + 12 = 42 (or n^2 + n: 6^2 + 6 = 42).", "exp_hi": "संख्याओं के बीच का अंतर +4, +6, +8, +10, +12 है; अतः 30 + 12 = 42 (या 6^2 + 6 = 42)।"}];
+
+    let currentGroup = 'all';
+    let currentSearch = '';
+    let currentView = 'grid'; // 'grid' or 'list'
+
+    // Theme toggler
+    function toggleTheme() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        document.getElementById('sun-icon').classList.remove('hidden');
+        document.getElementById('moon-icon').classList.add('hidden');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        document.getElementById('sun-icon').classList.add('hidden');
+        document.getElementById('moon-icon').classList.remove('hidden');
+      }
+    }
+
+    // Initialize theme
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      document.getElementById('sun-icon').classList.add('hidden');
+      document.getElementById('moon-icon').classList.remove('hidden');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.getElementById('sun-icon').classList.remove('hidden');
+      document.getElementById('moon-icon').classList.add('hidden');
+    }
+
+    function setViewMode(mode) {
+      currentView = mode;
+      const gridContainer = document.getElementById('papers-grid');
+      const listContainer = document.getElementById('papers-list');
+      const gridBtn = document.getElementById('view-grid-btn');
+      const listBtn = document.getElementById('view-list-btn');
+
+      if (mode === 'grid') {
+        gridContainer.classList.remove('hidden');
+        listContainer.classList.add('hidden');
+        gridBtn.classList.add('bg-white', 'dark:bg-slate-700', 'shadow-xs', 'text-brand-600', 'dark:text-brand-300');
+        gridBtn.classList.remove('text-slate-600', 'dark:text-slate-400');
+        listBtn.classList.remove('bg-white', 'dark:bg-slate-700', 'shadow-xs', 'text-brand-600', 'dark:text-brand-300');
+        listBtn.classList.add('text-slate-600', 'dark:text-slate-400');
+      } else {
+        gridContainer.classList.add('hidden');
+        listContainer.classList.remove('hidden');
+        listBtn.classList.add('bg-white', 'dark:bg-slate-700', 'shadow-xs', 'text-brand-600', 'dark:text-brand-300');
+        listBtn.classList.remove('text-slate-600', 'dark:text-slate-400');
+        gridBtn.classList.remove('bg-white', 'dark:bg-slate-700', 'shadow-xs', 'text-brand-600', 'dark:text-brand-300');
+        gridBtn.classList.add('text-slate-600', 'dark:text-slate-400');
+      }
+    }
+
+    function filterGroup(group) {
+      currentGroup = group;
+      document.querySelectorAll('.group-filter-btn').forEach(btn => {
+        if (btn.dataset.group == group) {
+          btn.classList.add('bg-brand-600', 'text-white', 'shadow-xs');
+          btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+        } else {
+          btn.classList.remove('bg-brand-600', 'text-white', 'shadow-xs');
+          btn.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+        }
+      });
+      renderPapers();
+    }
+
+    function handleSearch() {
+      currentSearch = document.getElementById('search-input').value.trim().toLowerCase();
+      renderPapers();
+    }
+
+    function renderPapers() {
+      const filtered = PAPERS.filter(p => {
+        const matchesGroup = currentGroup === 'all' || p.group == currentGroup;
+        const numStr = String(p.num);
+        const padStr = String(p.num).padStart(2, '0');
+        const matchesSearch = !currentSearch || 
+                              numStr.includes(currentSearch) || 
+                              padStr.includes(currentSearch) || 
+                              p.filename.toLowerCase().includes(currentSearch);
+        return matchesGroup && matchesSearch;
+      });
+
+      document.getElementById('results-count').innerText = `Showing ${filtered.length} of ${PAPERS.length} papers`;
+
+      // Render Grid
+      const grid = document.getElementById('papers-grid');
+      grid.innerHTML = filtered.map(p => `
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-9 h-9 rounded-xl bg-brand-50 dark:bg-brand-950/80 text-brand-700 dark:text-brand-400 font-extrabold flex items-center justify-center text-sm border border-brand-200 dark:border-brand-900">
+                #${String(p.num).padStart(2, '0')}
+              </span>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300">
+                Bilingual Set
+              </span>
+            </div>
+            
+            <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              ${p.title_hi}
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              ${p.title_en}
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+              <span>📖 150 Qs (LIS + GS)</span>
+              <span>📄 ${p.pages} Pages</span>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 flex items-center gap-2">
+            <button onclick="openModal('${p.filename}', 'Mock Paper ${String(p.num).padStart(2, '0')}', ${p.pages}, ${p.size_kb})" class="flex-1 py-2 px-3 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              <span>Preview</span>
+            </button>
+            <a href="${p.filename}" download class="flex-1 py-2 px-3 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-1 shadow-xs">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              <span>Download (${p.size_kb} KB)</span>
+            </a>
+          </div>
+        </div>
+      `).join('');
+
+      // Render List
+      const list = document.getElementById('papers-list');
+      list.innerHTML = filtered.map(p => `
+        <div class="bg-white dark:bg-slate-900 rounded-xl p-3 sm:p-4 border border-slate-200 dark:border-slate-800 shadow-xs flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3 min-w-0">
+            <span class="w-8 h-8 rounded-lg bg-brand-50 dark:bg-brand-950/80 text-brand-700 dark:text-brand-400 font-extrabold flex items-center justify-center text-xs shrink-0 border border-brand-200 dark:border-brand-900">
+              #${String(p.num).padStart(2, '0')}
+            </span>
+            <div class="truncate">
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white truncate">${p.title_hi}</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 truncate">${p.title_en} • 150 Qs • ${p.pages} pages • ${p.size_kb} KB</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="openModal('${p.filename}', 'Mock Paper ${String(p.num).padStart(2, '0')}', ${p.pages}, ${p.size_kb})" class="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-semibold transition" title="Preview">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            </button>
+            <a href="${p.filename}" download class="p-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-semibold transition flex items-center gap-1" title="Download">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              <span class="hidden sm:inline">PDF</span>
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Modal logic
+    function openModal(filename, title, pages, size) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-subtitle').innerText = `${pages} Pages • ${size} KB • 150 Bilingual MCQs with Explanations`;
+      document.getElementById('modal-download-btn').href = filename;
+      document.getElementById('modal-iframe').src = filename;
+      document.getElementById('pdf-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(e) {
+      document.getElementById('pdf-modal').classList.add('hidden');
+      document.getElementById('modal-iframe').src = '';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Quiz logic
+    let quizIdx = 0;
+    let quizScore = 0;
+    let answered = {};
+
+    function loadQuestion(idx) {
+      const q = QUESTIONS[idx];
+      document.getElementById('quiz-current-num').innerText = idx + 1;
+      document.getElementById('quiz-unit-badge').innerText = q.unit;
+      document.getElementById('quiz-score-badge').innerText = `Score: ${quizScore} / 10`;
+
+      document.getElementById('quiz-q-en').innerText = q.q_en;
+      document.getElementById('quiz-q-hi').innerText = q.q_hi;
+
+      const optsBox = document.getElementById('quiz-options-container');
+      optsBox.innerHTML = q.options_en.map((optEn, i) => {
+        const optHi = q.options_hi[i];
+        const letter = ['A', 'B', 'C', 'D'][i];
+        return `
+          <button onclick="handleAnswer(${i})" class="quiz-opt-btn w-full text-left p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-start gap-3">
+            <span class="w-6 h-6 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold flex items-center justify-center text-xs shrink-0 mt-0.5 border border-slate-300 dark:border-slate-600">
+              ${letter}
+            </span>
+            <div>
+              <div class="text-sm font-semibold text-slate-900 dark:text-white">${optEn}</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">${optHi}</div>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      const expBox = document.getElementById('quiz-exp-container');
+      if (answered[idx] !== undefined) {
+        revealAnswer(answered[idx]);
+      } else {
+        expBox.classList.add('hidden');
+      }
+
+      document.getElementById('quiz-prev-btn').disabled = (idx === 0);
+      document.getElementById('quiz-next-btn').innerText = (idx === QUESTIONS.length - 1) ? 'Finish / फिर से देखें' : 'अगला प्रश्न →';
+    }
+
+    function handleAnswer(choiceIdx) {
+      if (answered[quizIdx] !== undefined) return;
+      answered[quizIdx] = choiceIdx;
+      const q = QUESTIONS[quizIdx];
+      if (choiceIdx === q.correct) {
+        quizScore++;
+        document.getElementById('quiz-score-badge').innerText = `Score: ${quizScore} / 10`;
+      }
+      revealAnswer(choiceIdx);
+    }
+
+    function revealAnswer(choiceIdx) {
+      const q = QUESTIONS[quizIdx];
+      const btns = document.querySelectorAll('.quiz-opt-btn');
+      btns.forEach((btn, i) => {
+        if (i === q.correct) {
+          btn.classList.add('bg-emerald-50', 'dark:bg-emerald-950/60', 'border-emerald-500', 'text-emerald-900');
+        } else if (i === choiceIdx) {
+          btn.classList.add('bg-rose-50', 'dark:bg-rose-950/60', 'border-rose-500', 'text-rose-900');
+        }
+        btn.disabled = true;
+      });
+
+      const expBox = document.getElementById('quiz-exp-container');
+      const msg = document.getElementById('quiz-result-msg');
+      if (choiceIdx === q.correct) {
+        msg.innerHTML = '✓ सही उत्तर! (Correct Answer)';
+        msg.className = 'font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5';
+      } else {
+        msg.innerHTML = `✗ गलत उत्तर! सही उत्तर विकल्प (${['A','B','C','D'][q.correct]}) है।`;
+        msg.className = 'font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1.5';
+      }
+      document.getElementById('quiz-exp-en').innerText = q.exp_en;
+      document.getElementById('quiz-exp-hi').innerText = q.exp_hi;
+      expBox.classList.remove('hidden');
+    }
+
+    function prevQuestion() {
+      if (quizIdx > 0) {
+        quizIdx--;
+        loadQuestion(quizIdx);
+      }
+    }
+
+    function nextQuestion() {
+      if (quizIdx < QUESTIONS.length - 1) {
+        quizIdx++;
+        loadQuestion(quizIdx);
+      } else {
+        quizIdx = 0;
+        loadQuestion(quizIdx);
+      }
+    }
+
+    // Initial load
+    renderPapers();
+    loadQuestion(0);
+  </script>
+</body>
+</html>

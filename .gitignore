@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.idea/
+.vscode/
+*.tmp
+test_*.py
+patch_*.py
+append_*.py
+add_*.py
+subagent2_*
+Bihar_Librarian_LET_Model_Paper_01.pdf
+formatted_message.txt
+fix_*.py

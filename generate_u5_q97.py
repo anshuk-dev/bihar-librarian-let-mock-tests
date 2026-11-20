@@ -1,0 +1,500 @@
+# -*- coding: utf-8 -*-
+"""
+Generator for Slot Q97: Artificial Intelligence, Chatbots & Cloud Computing in Libraries - 48 items.
+"""
+
+q97_items = [
+    # 1: AI definition in LIS
+    ("In the context of modern library and information science, what is the primary role of Artificial Intelligence (AI)?",
+     "आधुनिक पुस्तकालय और सूचना विज्ञान के संदर्भ में, आर्टिफिशियल इंटेलिजेंस (AI) की प्राथमिक भूमिका क्या है?",
+     "Augmenting human librarian capabilities by automating routine tasks, enriching metadata, and enabling advanced discovery and reference services",
+     "नियमित कार्यों को स्वचालित करके, मेटाडेटा को समृद्ध करके और उन्नत खोज व संदर्भ सेवाओं को सक्षम करके मानव लाइब्रेरियन की क्षमताओं को बढ़ाना",
+     ["Completely replacing human librarians and permanently shutting down physical library buildings", "Converting all scholarly journal articles into secret encrypted codes unreadable by humans", "Restricting academic research access exclusively to computer programming engineers"],
+     ["मानव लाइब्रेरियनों को पूरी तरह से बदलना और भौतिक पुस्तकालय भवनों को स्थायी रूप से बंद करना", "सभी विद्वत्तापूर्ण पत्रिका लेखों को गुप्त एन्क्रिप्टेड कोड में बदलना जो इंसानों द्वारा न पढ़े जा सकें", "अकादमिक अनुसंधान पहुंच को विशेष रूप से कंप्यूटर प्रोग्रामिंग इंजीनियरों तक सीमित करना"],
+     "AI serves as an assistive tool in libraries—enhancing cataloging, reference triage, search relevance, and preservation without eliminating professional human judgment.",
+     "पुस्तकालयों में AI का उद्देश्य लाइब्रेरियन की जगह लेना नहीं, बल्कि दोहराव वाले कामों को आसान बनाकर पाठकों को बेहतर संदर्भ और खोज सेवाएं देना है।"),
+
+    # 2: Machine Learning paradigms
+    ("What are the three foundational learning paradigms of Machine Learning utilized in library data science?",
+     "पुस्तकालय डेटा विज्ञान में उपयोग किए जाने वाले मशीन लर्निंग के तीन मूलभूत शिक्षण प्रतिमान कौन से हैं?",
+     "Supervised Learning, Unsupervised Learning, and Reinforcement Learning",
+     "सुपरवाइज्ड लर्निंग (Supervised), अनसुपरवाइज्ड लर्निंग (Unsupervised), और रीइन्फोर्समेंट लर्निंग (Reinforcement)",
+     ["Alpha Learning, Beta Learning, and Gamma Learning", "Primary Learning, Secondary Learning, and Tertiary Learning", "Linear Learning, Circular Learning, and Triangular Learning"],
+     ["अल्फा लर्निंग, बीटा लर्निंग, और गामा लर्निंग", "प्राथमिक लर्निंग, द्वितीयक लर्निंग, और तृतीयक लर्निंग", "रैखिक लर्निंग, परिपत्र लर्निंग, और त्रिकोणीय लर्निंग"],
+     "Supervised learning trains on labeled data (e.g., subject classification), unsupervised discovers hidden clusters (e.g., topic modeling), and reinforcement learns through reward feedback.",
+     "मशीन लर्निंग के तीन मुख्य प्रकार हैं: सुपरवाइज्ड (लेबल किए गए डेटा से सीखना), अनसुपरवाइज्ड (छिपे हुए पैटर्न खोजना), और रीइन्फोर्समेंट (अनुभव और पुरस्कार से सीखना)।"),
+
+    # 3: NLP in Libraries
+    ("How is Natural Language Processing (NLP) specifically applied to enhance library cataloging and discovery?",
+     "पुस्तकालय कैटलॉगिंग और खोज को बढ़ाने के लिए प्राकृतिक भाषा प्रसंस्करण (NLP) विशेष रूप से कैसे लागू किया जाता है?",
+     "Extracting key concepts, Named Entities (NER), and automated subject keywords from full-text electronic theses and research papers",
+     "पूर्ण-पाठ इलेक्ट्रॉनिक शोध प्रबंधों और शोध पत्रों से प्रमुख अवधारणाओं, नामित संस्थाओं (NER) और स्वचालित विषय कीवर्ड निकालना",
+     ["Calculating the physical weight and paper thickness of bound printed periodicals", "Controlling the rotational speed of cooling fans inside desktop computer towers", "Encrypting patron student identity card numbers before printing plastic badges"],
+     ["बाउंड मुद्रित पत्रिकाओं के भौतिक वजन और कागज़ की मोटाई की गणना करना", "डेस्कटॉप कंप्यूटर टावरों के अंदर कूलिंग प्रशंसकों की घूर्णन गति को नियंत्रित करना", "प्लास्टिक बैज प्रिंट करने से पहले संरक्षक छात्र पहचान पत्र नंबरों को एन्क्रिप्ट करना"],
+     "NLP parses unstructured full-text research, automatically identifying authors, geographical entities, and topical descriptors to populate bibliographic metadata fields.",
+     "NLP (नेचुरल लैंग्वेज प्रोसेसिंग) कंप्यूटर को मानव भाषा समझने में सक्षम बनाता है, जिससे शोध प्रबंधों से विषय, स्थान और लेखकों के नाम अपने आप निकाले जा सकते हैं।"),
+
+    # 4: Retrieval-Augmented Generation (RAG)
+    ("Why is 'Retrieval-Augmented Generation' (RAG) critical when deploying Generative AI and Large Language Models (LLMs) in academic libraries?",
+     "अकादमिक पुस्तकालयों में जनरेटिव AI और बड़े भाषा मॉडल (LLM) को तैनात करते समय 'रिट्रीवल-ऑगमेंटेड जेनरेशन' (RAG) क्यों महत्वपूर्ण है?",
+     "It grounds LLM responses in verified, authoritative library peer-reviewed collections, drastically reducing hallucinations and providing accurate citations",
+     "यह एलएलएम (LLM) प्रतिक्रियाओं को सत्यापित, आधिकारिक सहकर्मी-समीक्षित पुस्तकालय संग्रहों में आधारित करता है, जिससे भ्रम (Hallucinations) में भारी कमी आती है और सटीक संदर्भ मिलते हैं",
+     ["It forces students to purchase expensive commercial textbook subscriptions before viewing search results", "It automatically translates all scientific articles into ancient Greek and Latin languages", "It completely deletes the library catalog index every time a new query is submitted"],
+     ["यह छात्रों को खोज परिणाम देखने से पहले महंगी वाणिज्यिक पाठ्यपुस्तक सदस्यता खरीदने के लिए मजबूर करता है", "यह सभी वैज्ञानिक लेखों को स्वचालित रूप से प्राचीन ग्रीक और लैटिन भाषाओं में अनुवादित करता है", "यह हर बार एक नई क्वेरी सबमिट होने पर पुस्तकालय कैटलॉग इंडेक्स को पूरी तरह से हटा देता है"],
+     "RAG retrieves relevant passages from trusted library databases first, prompting the LLM to synthesize answers solely from verifiable, cited academic texts.",
+     "RAG तकनीक यह सुनिश्चित करती है कि AI मॉडल मनगढ़ंत या झूठी बातें (Hallucinations) न बोले, बल्कि पुस्तकालय के प्रामाणिक शोध पत्रों को पढ़कर ही सही संदर्भ के साथ उत्तर दे।"),
+
+    # 5: Conversational Chatbots
+    ("How do modern AI-powered library chatbots (like Springshare LibChat AI or Ivy.ai) assist university patrons?",
+     "आधुनिक AI-संचालित पुस्तकालय चैटबॉट्स (जैसे Springshare LibChat AI या Ivy.ai) विश्वविद्यालय के संरक्षकों की कैसे सहायता करते हैं?",
+     "Providing 24/7 instant conversational assistance for directional inquiries, library hours, database navigation, and room bookings, escalating complex queries to librarians",
+     "दिशात्मक पूछताछ, पुस्तकालय के समय, डेटाबेस नेविगेशन और कमरा बुकिंग के लिए 24/7 तत्काल संवादात्मक सहायता प्रदान करना, और जटिल प्रश्नों को लाइब्रेरियन को अग्रेषित करना",
+     ["Issuing automatic academic suspension notices to students who return books late", "Selling commercial fast food and soft drinks inside university reading rooms", "Preventing undergraduate students from accessing electronic academic journals"],
+     ["देर से किताबें लौटाने वाले छात्रों को स्वचालित अकादमिक निलंबन नोटिस जारी करना", "विश्वविद्यालय के रीडिंग रूम के अंदर व्यावसायिक फास्ट फूड और शीतल पेय बेचना", "अंडरग्रेजुएट छात्रों को इलेक्ट्रॉनिक अकादमिक पत्रिकाओं तक पहुँचने से रोकना"],
+     "Chatbots handle high-volume routine inquiries around the clock, freeing professional librarians to conduct in-depth research consultations.",
+     "पुस्तकालय चैटबॉट 24 घंटे छात्रों के सामान्य सवालों (जैसे समय, सदस्यता नियम, वाईफाई) के जवाब देते हैं, जिससे लाइब्रेरियन का समय गंभीर शोध सहायता के लिए बचता है।"),
+
+    # 6: Vector Databases & Semantic Search
+    ("What role do Vector Databases (such as Milvus, Pinecone, or ChromaDB) play in next-generation library semantic discovery systems?",
+     "अगली पीढ़ी की पुस्तकालय सिमेंटिक खोज प्रणालियों में वेक्टर डेटाबेस (जैसे Milvus, Pinecone, या ChromaDB) क्या भूमिका निभाते हैं?",
+     "Storing high-dimensional dense vector embeddings of documents, enabling concept-based semantic search rather than rigid literal keyword matching",
+     "दस्तावेजों के उच्च-आयामी सघन वेक्टर एम्बेडिंग को संग्रहीत करना, कठोर शाब्दिक कीवर्ड मिलान के बजाय अवधारणा-आधारित सिमेंटिक खोज को सक्षम करना",
+     ["Measuring electrical energy consumption of physical server hardware racks", "Managing the payroll compensation records of university library administrative staff", "Controlling the physical robotic arm sorting incoming paper book donations"],
+     ["भौतिक सर्वर हार्डवेयर रैक की विद्युत ऊर्जा खपत को मापना", "विश्वविद्यालय पुस्तकालय प्रशासनिक कर्मचारियों के पेरोल मुआवजा रिकॉर्ड का प्रबंधन करना", "आने वाले कागज़ की पुस्तक दान को छांटने वाले भौतिक रोबोटिक हाथ को नियंत्रित करना"],
+     "Vector databases allow patrons to search using natural questions or conceptual descriptions, retrieving semantically related research even when exact words differ.",
+     "वेक्टर डेटाबेस शब्दों के अर्थ (सिमेंटिक्स) को गणितीय वेक्टर के रूप में सहेजते हैं, जिससे यदि पाठक हुबहू शब्द न भी लिखे, तब भी अवधारणा से जुड़े सही शोध पत्र खोज में आ जाते हैं।"),
+
+    # 7: AI in Automated Subject Indexing
+    ("Which open-source automated subject indexing tool developed by the National Library of Finland uses machine learning to assign LCSH or MeSH headings?",
+     "फिनलैंड के राष्ट्रीय पुस्तकालय द्वारा विकसित कौन सा ओपन-सोर्स स्वचालित विषय अनुक्रमण उपकरण LCSH या MeSH शीर्षक सौंपने के लिए मशीन लर्निंग का उपयोग करता है?",
+     "Annif",
+     "अनिफ़ (Annif)",
+     ["Apache Cassandra", "Adobe InDesign", "Oracle Database 19c"],
+     ["अपाचे कैसेंड्रा", "एडोब इनडिज़ाइन", "ओरेकल डेटाबेस 19c"],
+     "Annif (annif.org) combines lexical analyzers, statistical classification, and neural network algorithms to automatically suggest subject descriptors for digital documents.",
+     "Annif फिनलैंड के राष्ट्रीय पुस्तकालय द्वारा बनाया गया एक प्रसिद्ध ओपन-सोर्स टूल है जो मशीन लर्निंग से किसी भी थीसिस या किताब को पढ़कर उपयुक्त विषय शीर्षक (LCSH आदि) सुझाता है।"),
+
+    # 8: OCR & Transkribus
+    ("What is 'Transkribus' and how does it revolutionize digital manuscript preservation in libraries?",
+     "'ट्रांसक्रिबस' (Transkribus) क्या है और यह पुस्तकालयों में डिजिटल पांडुलिपि संरक्षण में कैसे क्रांति लाता है?",
+     "An AI-powered platform using deep neural networks for Handwritten Text Recognition (HTR) to automatically transcribe historical handwritten documents and archival manuscripts",
+     "ऐतिहासिक हस्तलिखित दस्तावेजों और अभिलेखीय पांडुलिपियों को स्वचालित रूप से ट्रांसक्राइब करने के लिए हस्तलिखित पाठ पहचान (HTR) हेतु गहरे तंत्रिका नेटवर्क का उपयोग करने वाला एक AI-संचालित मंच",
+     ["A commercial software program designed to print color barcode labels on plastic cards", "A security firewall designed to prevent external web crawlers from visiting library websites", "An automated robotic lawnmower designed to maintain university campus gardens"],
+     ["प्लास्टिक कार्ड पर रंगीन बारकोड लेबल प्रिंट करने के लिए डिज़ाइन किया गया एक वाणिज्यिक सॉफ्टवेयर प्रोग्राम", "पुस्तकालय वेबसाइटों पर जाने से बाहरी वेब क्रॉलर्स को रोकने के लिए डिज़ाइन किया गया एक सुरक्षा फ़ायरवॉल", "विश्वविद्यालय परिसर के बगीचों को बनाए रखने के लिए डिज़ाइन किया गया एक स्वचालित रोबोटिक लॉनमूवर"],
+     "Transkribus utilizes deep learning models trained on historical scripts (Latin, Gothic, Cyrillic, Indic scripts) to transcribe fragile manuscripts into fully searchable digital text.",
+     "Transkribus एक AI प्लेटफॉर्म है जो पुरानी हस्तलिखित पांडुलिपियों (Handwritten Manuscripts) को खुद पढ़कर उन्हें डिजिटल और खोजने योग्य टेक्स्ट में बदल देता है।"),
+
+    # 9: Algorithmic Bias in Library AI
+    ("Why must librarians remain vigilant regarding 'Algorithmic Bias' in AI discovery and recommendation tools?",
+     "AI खोज और अनुशंसा उपकरणों में 'एल्गोरिथम पूर्वाग्रह' (Algorithmic Bias) के संबंध में लाइब्रेरियनों को सतर्क क्यों रहना चाहिए?",
+     "Because AI models trained on historical data can perpetuate and amplify systemic biases, marginalizing underrepresented authors and non-Western scholarly perspectives",
+     "क्योंकि ऐतिहासिक डेटा पर प्रशिक्षित AI मॉडल प्रणालीगत पूर्वाग्रहों को जारी रख सकते हैं और बढ़ा सकते हैं, जिससे कम प्रतिनिधित्व वाले लेखकों और गैर-पश्चिमी विद्वानों के दृष्टिकोण हाशिए पर चले जाते हैं",
+     ["Because AI algorithms cause computer hardware monitors to overheat and burn out quickly", "Because biased algorithms automatically double the physical page length of digital textbooks", "Because algorithmic bias prevents university servers from connecting to local WiFi networks"],
+     ["क्योंकि AI एल्गोरिदम कंप्यूटर हार्डवेयर मॉनिटर को अधिक गर्म करते हैं और जल्दी खराब करते हैं", "क्योंकि पक्षपाती एल्गोरिदम डिजिटल पाठ्यपुस्तकों की भौतिक पृष्ठ लंबाई को स्वचालित रूप से दोगुना कर देते हैं", "क्योंकि एल्गोरिथम पूर्वाग्रह विश्वविद्यालय के सर्वरों को स्थानीय वाईफाई नेटवर्क से जुड़ने से रोकता है"],
+     "Librarians have a professional ethical duty to audit AI tools for demographic, cultural, and geographic equity in citation and search discovery.",
+     "लाइब्रेरियनों को सतर्क रहना चाहिए क्योंकि AI पुराने डेटा से सीखता है, जिससे यह संभव है कि वह कुछ खास देशों या वर्गों के लेखकों को अधिक दिखाए और अन्य महत्वपूर्ण आवाज़ों को दबा दे।"),
+
+    # 10: Citation Analysis AI (Scite.ai)
+    ("How does an AI-driven citation platform like 'Scite.ai' advance beyond traditional citation counts (such as Web of Science or Scopus)?",
+     "'Scite.ai' जैसा AI-संचालित उद्धरण मंच पारंपरिक उद्धरण गणनाओं (जैसे वेब ऑफ साइंस या स्कोपस) से आगे कैसे बढ़ता है?",
+     "By using deep learning to classify citation context—showing whether succeeding studies provided 'Supporting', 'Contrasting', or simply 'Mentioning' evidence",
+     "उद्धरण संदर्भ को वर्गीकृत करने के लिए डीप लर्निंग का उपयोग करके — यह दिखाते हुए कि क्या बाद के अध्ययनों ने 'समर्थन' (Supporting), 'विपरीत' (Contrasting), या केवल 'उल्लेख' (Mentioning) प्रमाण प्रदान किया",
+     ["By charging authors mandatory cash penalties every time their research is cited by other scientists", "By automatically converting all citation footnotes into rhyming musical jingles", "By deleting citations that are older than twelve months from library discovery indexes"],
+     ["हर बार जब उनके शोध को अन्य वैज्ञानिकों द्वारा उद्धृत किया जाता है तो लेखकों से अनिवार्य नकद जुर्माना वसूलना", "सभी उद्धरण फुटनोट्स को स्वचालित रूप से तुकबंदी वाले संगीतमय जिंगल्स में परिवर्तित करना", "पुस्तकालय खोज अनुक्रमणिका से बारह महीने से अधिक पुराने उद्धरणों को हटाना"],
+     "Scite.ai analyzes Smart Citations, helping researchers distinguish between papers whose findings have been replicated versus those challenged or refuted by later experiments.",
+     "Scite.ai केवल यह नहीं गिनता कि कितने उद्धरण मिले, बल्कि AI से यह बताता है कि बाद के शोधकर्ताओं ने उस दावे का समर्थन किया है, विरोध किया है या केवल सामान्य उल्लेख किया है।"),
+
+    # 11: NIST Cloud Definition (SP 800-145)
+    ("According to the NIST Special Publication 800-145, which of the following is NOT one of the five essential characteristics of Cloud Computing?",
+     "NIST विशेष प्रकाशन 800-145 के अनुसार, निम्नलिखित में से कौन सा क्लाउड कंप्यूटिंग की पांच आवश्यक विशेषताओं में से एक नहीं है?",
+     "Mandatory physical ownership of all server hardware on the customer's campus",
+     "ग्राहक के परिसर में सभी सर्वर हार्डवेयर का अनिवार्य भौतिक स्वामित्व",
+     ["On-demand self-service", "Broad network access and Resource pooling", "Rapid elasticity and Measured service"],
+     ["ऑन-डिमांड स्व-सेवा (On-demand self-service)", "व्यापक नेटवर्क पहुंच और संसाधन पूलिंग", "त्वरित लोच (Rapid elasticity) और मापी गई सेवा"],
+     "NIST defines 5 essential cloud characteristics: On-demand self-service, Broad network access, Resource pooling, Rapid elasticity, and Measured service. Physical on-premise hardware ownership is the opposite of cloud.",
+     "NIST SP 800-145 के अनुसार क्लाउड की 5 विशेषताएं हैं: 1. ऑन-डिमांड सेल्फ-सर्विस, 2. व्यापक नेटवर्क पहुंच, 3. रिसोर्स पूलिंग, 4. तीव्र लचीलापन, और 5. मापी गई सेवा। स्थानीय हार्डवेयर रखना क्लाउड नहीं है।"),
+
+    # 12: IaaS (Infrastructure as a Service)
+    ("What does 'Infrastructure as a Service' (IaaS) provide to a university library IT department?",
+     "'इन्फ्रास्ट्रक्चर एज़ ए सर्विस' (IaaS) एक विश्वविद्यालय पुस्तकालय आईटी विभाग को क्या प्रदान करता है?",
+     "On-demand virtualized computing resources (virtual machines, raw block storage, firewalls, and network switches) over the internet (e.g., AWS EC2, Google Compute Engine)",
+     "इंटरनेट पर ऑन-डिमांड वर्चुअलाइज्ड कंप्यूटिंग संसाधन (वर्चुअल मशीन, कच्चा ब्लॉक स्टोरेज, फायरवॉल और नेटवर्क स्विच) (जैसे AWS EC2, Google Compute Engine)",
+     ["Pre-installed, fully managed turnkey web applications where users cannot configure any operating systems", "Free physical computer monitors and mechanical keyboards delivered to campus libraries", "A contract where human computer engineers physically relocate to work inside the university library"],
+     ["पूर्व-स्थापित, पूरी तरह से प्रबंधित टर्नकी वेब अनुप्रयोग जहाँ उपयोगकर्ता किसी भी ऑपरेटिंग सिस्टम को कॉन्फ़िगर नहीं कर सकते", "परिसर के पुस्तकालयों में वितरित मुफ्त भौतिक कंप्यूटर मॉनिटर और मैकेनिकल कीबोर्ड", "एक अनुबंध जहाँ मानव कंप्यूटर इंजीनियर विश्वविद्यालय के पुस्तकालय के अंदर काम करने के लिए भौतिक रूप से स्थानांतरित होते हैं"],
+     "With IaaS, library IT rents raw virtual servers and storage, retaining complete administrative control over the operating system, middleware, and installed applications.",
+     "IaaS में क्लाउड प्रदाता (जैसे AWS या Google Cloud) वर्चुअल सर्वर और हार्ड डिस्क किराए पर देता है, जिस पर पुस्तकालय अपनी पसंद का OS और सॉफ्टवेयर इंस्टॉल करता है।"),
+
+    # 13: PaaS (Platform as a Service)
+    ("Which of the following best exemplifies 'Platform as a Service' (PaaS) in cloud computing?",
+     "निम्नलिखित में से कौन सा क्लाउड कंप्यूटिंग में 'प्लेटफ़ॉर्म एज़ ए सर्विस' (PaaS) का सबसे अच्छा उदाहरण है?",
+     "A managed cloud development environment (like Google App Engine or AWS Elastic Beanstalk) where developers deploy code without managing underlying servers and OS patches",
+     "एक प्रबंधित क्लाउड विकास वातावरण (जैसे Google App Engine या AWS Elastic Beanstalk) जहाँ डेवलपर्स अंतर्निहित सर्वर और OS पैच प्रबंधित किए बिना कोड तैनात करते हैं",
+     ["Renting raw unformatted hard drive blocks from an external storage vendor", "Purchasing physical copper cables to wire local library reading room routers", "Using Google Docs to write a master's thesis in library and information science"],
+     ["किसी बाहरी स्टोरेज विक्रेता से कच्चे अनफॉर्मेट किए गए हार्ड ड्राइव ब्लॉक किराए पर लेना", "स्थानीय पुस्तकालय रीडिंग रूम राउटर को तार-तार करने के लिए भौतिक तांबे के केबल खरीदना", "पुस्तकालय और सूचना विज्ञान में मास्टर शोध प्रबंध लिखने के लिए Google डॉक्स का उपयोग करना"],
+     "PaaS abstracts away server maintenance, operating system patches, and hardware scaling, letting developers focus solely on application code.",
+     "PaaS में डेवलपर्स को केवल अपना प्रोग्राम/कोड चलाना होता है; ऑपरेटिंग सिस्टम, सर्वर अपडेट और हार्डवेयर की चिंता क्लाउड प्रदाता खुद संभालता है।"),
+
+    # 14: SaaS (Software as a Service)
+    ("Why is 'Software as a Service' (SaaS) the most popular cloud model for modern Integrated Library Systems and discovery services?",
+     "आधुनिक एकीकृत पुस्तकालय प्रणालियों और खोज सेवाओं के लिए 'सॉफ्टवेयर एज़ ए सर्विस' (SaaS) सबसे लोकप्रिय क्लाउड मॉडल क्यों है?",
+     "The library accesses a complete, turnkey application over a web browser, with the cloud vendor handling all hosting, upgrades, database backups, and security patches",
+     "पुस्तकालय एक वेब ब्राउज़र पर एक संपूर्ण, टर्नकी एप्लिकेशन का उपयोग करता है, जिसमें क्लाउड विक्रेता सभी होस्टिंग, अपग्रेड, डेटाबेस बैकअप और सुरक्षा पैच संभालता है",
+     ["It requires the library to purchase and physically house thirty server racks inside its basement", "It forces librarians to manually compile software source code from magnetic tapes every morning", "It forbids patrons from searching the catalog outside of normal library opening hours"],
+     ["इसके लिए पुस्तकालय को अपने बेसमेंट के अंदर तीस सर्वर रैक खरीदने और भौतिक रूप से रखने की आवश्यकता होती है", "यह लाइब्रेरियनों को हर सुबह चुंबकीय टेप से सॉफ्टवेयर स्रोत कोड को मैन्युअल रूप से संकलित करने के लिए मजबूर करता है", "यह सामान्य पुस्तकालय खुलने के समय के बाहर संरक्षकों को कैटलॉग खोजने से रोकता है"],
+     "SaaS solutions (like Ex Libris Alma, OCLC WorldShare, or hosted Koha) eliminate local server maintenance burdens, allowing librarians to focus entirely on patron services.",
+     "SaaS (जैसे Alma, OCLC WorldShare या क्लाउड कोहा) में पुस्तकालय को कोई सर्वर नहीं लगाना पड़ता; सारा सॉफ्टवेयर इंटरनेट पर चलता है और बैकअप व अपडेट कंपनी खुद करती है।"),
+
+    # 15: Cloud Deployment Models
+    ("What is a 'Community Cloud' in the context of library consortia (such as INFLIBNET or DELNET)?",
+     "पुस्तकालय संघों (जैसे INFLIBNET या DELNET) के संदर्भ में 'कम्युनिटी क्लाउड' (Community Cloud) क्या है?",
+     "A shared cloud infrastructure provisioned for exclusive use by a specific community of institutions with shared missions, security requirements, and policy objectives",
+     "साझा मिशन, सुरक्षा आवश्यकताओं और नीतिगत उद्देश्यों वाले संस्थानों के एक विशिष्ट समुदाय द्वारा अनन्य उपयोग के लिए प्रदान किया गया एक साझा क्लाउड इन्फ्रास्ट्रक्चर",
+     ["A public commercial cloud open to anyone worldwide for personal entertainment gaming", "A private disconnected computer server running offline inside a single school principal's office", "An open-air outdoor wireless hotspot installed in a public municipal playground"],
+     ["व्यक्तिगत मनोरंजन गेमिंग के लिए दुनिया भर में किसी के लिए भी खुला एक सार्वजनिक वाणिज्यिक क्लाउड", "एक निजी डिस्कनेक्ट किया गया कंप्यूटर सर्वर जो एक ही स्कूल के प्रिंसिपल के कार्यालय के अंदर ऑफ़लाइन चल रहा है", "एक सार्वजनिक नगरपालिका खेल के मैदान में स्थापित एक ओपन-एयर आउटडोर वायरलेस हॉटस्पॉट"],
+     "A community cloud allows participating university libraries to pool computing resources, share union catalogs, and lower infrastructure costs within a trusted academic boundary.",
+     "कम्युनिटी क्लाउड एक ऐसा साझा क्लाउड है जिसे एक जैसे उद्देश्य वाले संस्थान (जैसे विश्वविद्यालयों का कंसोर्टियम) मिलकर इस्तेमाल करते हैं, जिससे लागत कम और डेटा सुरक्षित रहता है।"),
+
+    # 16: Hybrid Cloud in Libraries
+    ("Why might a major research library adopt a 'Hybrid Cloud' architecture?",
+     "एक प्रमुख अनुसंधान पुस्तकालय 'हाइब्रिड क्लाउड' (Hybrid Cloud) वास्तुकla को क्यों अपना सकता है?",
+     "Keeping sensitive institutional patron records and restricted manuscripts on a secure on-premise private cloud while hosting public discovery portals on scalable public clouds",
+     "सार्वजनिक खोज पोर्टलों को स्केलेबल सार्वजनिक बादलों पर होस्ट करते हुए एक सुरक्षित ऑन-प्रिमाइसेस निजी क्लाउड पर संवेदनशील संस्थागत संरक्षक रिकॉर्ड और प्रतिबंधित पांडुलिपियों को रखना",
+     ["Because university regulations strictly prohibit using any computers connected to the internet", "Because private cloud vendors refuse to store text written in non-English languages", "Because hybrid cloud systems consume zero electrical power and generate zero heat"],
+     ["क्योंकि विश्वविद्यालय के नियम इंटरनेट से जुड़े किसी भी कंप्यूटर के उपयोग पर सख्ती से रोक लगाते हैं", "क्योंकि निजी क्लाउड विक्रेता गैर-अंग्रेजी भाषाओं में लिखे गए पाठ को संग्रहीत करने से इनकार करते हैं", "क्योंकि हाइब्रिड क्लाउड सिस्टम शून्य विद्युत शक्ति की खपत करते हैं और शून्य गर्मी उत्पन्न करते हैं"],
+     "Hybrid cloud balances regulatory compliance, privacy, and control with the elastic scaling and high availability of public cloud platforms during traffic spikes.",
+     "हाइब्रिड क्लाउड में पुस्तकालय अपने संवेदनशील रिकॉर्ड (छात्र डेटा, गोपनीय दस्तावेज) अपने निजी सर्वर पर रखता है और वेबसाइट व पब्लिक कैटलॉग को पब्लिक क्लाउड पर चलाता है।"),
+
+    # 17: Ex Libris Alma & OCLC WMS
+    ("What category of software do platforms like Ex Libris Alma and OCLC WorldShare Management Services (WMS) represent?",
+     "एक्स लिब्रिस अल्मा (Alma) और ओसीएलसी वर्ल्डशेयर मैनेजमेंट सर्विसेज (WMS) जैसे प्लेटफॉर्म सॉफ्टवेयर की किस श्रेणी का प्रतिनिधित्व करते हैं?",
+     "Cloud-native, multi-tenant Library Services Platforms (LSPs) that unify print, electronic, and digital resource management in a single cloud system",
+     "क्लाउड-ने native, बहु-किरायेदार (multi-tenant) लाइब्रेरी सर्विसेज प्लेटफॉर्म (LSPs) जो एक ही क्लाउड सिस्टम में प्रिंट, इलेक्ट्रॉनिक और डिजिटल संसाधन प्रबंधन को एकीकृत करते हैं",
+     ["Offline single-user catalog card printing desktop utilities developed for MS-DOS", "Standalone optical character recognition utilities for flatbed desktop image scanners", "Local hardware firewall appliances designed for residential broadband connections"],
+     ["एमएस-डॉस के लिए विकसित ऑफ़लाइन एकल-उपयोगकर्ता कैटलॉग कार्ड प्रिंटिंग डेस्कटॉप उपयोगिताएं", "फ्लैटबेड डेस्कटॉप छवि स्कैनर के लिए स्टैंडअलोन ऑप्टिकल कैरेक्टर पहचान उपयोगिताएं", "आवासीय ब्रॉडबैंड कनेक्शन के लिए डिज़ाइन किए गए स्थानीय हार्डवेयर फ़ायरवॉल उपकरण"],
+     "LSPs supersede traditional legacy ILS by natively managing electronic journal licenses, open-access repositories, and physical books within a unified SaaS environment.",
+     "Alma और WMS आधुनिक क्लाउड लाइब्रेरी सर्विसेज प्लेटफॉर्म (LSP) हैं, जो किताबों के साथ-साथ ई-जर्नल्स और डिजिटल डेटाबेस को एक ही क्लाउड इंटरफेस से प्रबंधित करते हैं।"),
+
+    # 18: Docker Containers in Libraries
+    ("Why is 'Containerization' (using Docker) widely preferred over traditional Virtual Machines (VMs) for deploying library software like Koha or DSpace?",
+     "कोहा या डीस्पेस जैसे पुस्तकालय सॉफ्टवेयर को तैनात करने के लिए पारंपरिक वर्चुअल मशीनों (VMs) की तुलना में 'कंटेनराइजेशन' (डॉकर का उपयोग) को व्यापक रूप से प्राथमिकता क्यों दी जाती है?",
+     "Containers share the host OS kernel, making them lightweight, rapidly bootable, highly portable, and resource-efficient compared to heavy VMs",
+     "कंटेनर होस्ट ओएस कर्नेल साझा करते हैं, जिससे वे भारी VMs की तुलना में हल्के, तेज़ी से बूट होने वाले, अत्यधिक पोर्टेबल और संसाधन-कुशल बनते हैं",
+     ["Containers require no electrical energy to run on physical server computers", "Containers permanently prevent software from ever needing security updates", "Containers convert all open-source software into proprietary closed-source binary code"],
+     ["भौतिक सर्वर कंप्यूटरों पर चलने के लिए कंटेनरों को किसी विद्युत ऊर्जा की आवश्यकता नहीं होती है", "कंटेनर सॉफ़्टवेयर को सुरक्षा अद्यतनों की आवश्यकता से स्थायी रूप से रोकते हैं", "कंटेनर सभी ओपन-सोर्स सॉफ़्टवेयर को मालिकाना क्लोज्ड-सोर्स बाइनरी कोड में परिवर्तित करते हैं"],
+     "Docker packages the library application along with all its specific dependencies, ensuring it runs identically across local development laptops and production cloud servers.",
+     "डॉकर (Docker) कंटेनर वर्चुअल मशीन से बहुत हल्के और तेज़ होते हैं क्योंकि वे मुख्य OS कर्नेल साझा करते हैं; इससे कोहा या डीस्पेस को किसी भी सर्वर पर तुरंत शुरू किया जा सकता है।"),
+
+    # 19: Cloud Storage Classes (AWS S3)
+    ("How do tiered cloud storage architectures (such as Amazon S3 Standard vs S3 Glacier) benefit digital library preservation?",
+     "स्तरीय क्लाउड स्टोरेज आर्किटेक्चर (जैसे अमेज़न S3 स्टैंडर्ड बनाम S3 ग्लेशियर) डिजिटल पुस्तकालय संरक्षण को कैसे लाभ पहुंचाते हैं?",
+     "Frequently accessed digital items are kept in high-performance storage, while massive archival master TIFF files are stored long-term in ultra-low-cost cold storage",
+     "अक्सर एक्सेस की जाने वाली डिजिटल वस्तुओं को उच्च-प्रदर्शन भंडारण में रखा जाता है, जबकि विशाल अभिलेखीय मास्टर TIFF फ़ाइलों को अत्यधिक कम लागत वाले कोल्ड स्टोरेज में लंबे समय तक संग्रहीत किया जाता है",
+     ["All digital files are permanently deleted automatically after thirty days of non-use", "Cold storage encrypts files so that no human can ever open them again under any circumstances", "Tiered storage requires library patrons to pay hourly fees to view book covers online"],
+     ["गैर-उपयोग के तीस दिनों के बाद सभी डिजिटल फाइलें स्वचालित रूप से स्थायी रूप से हटा दी जाती हैं", "कोल्ड स्टोरेज फाइलों को एन्क्रिप्ट करता है ताकि कोई भी इंसान किसी भी परिस्थिति में उन्हें फिर कभी न खोल सके", "टियर वाले स्टोरेज के लिए पुस्तकालय संरक्षकों को पुस्तक कवर ऑनलाइन देखने के लिए प्रति घंटा शुल्क का भुगतान करना पड़ता है"],
+     "Storage tiering optimizes budgets: frequently downloaded PDFs sit in active S3 tiers, while raw uncompressed master scans are preserved inexpensively in deep cold archives.",
+     "क्लाउड में अक्सर पढ़े जाने वाले आर्टिकल्स को तेज़ स्टोरेज (S3 Standard) में और विशाल मास्टर स्कैन फाइलों को बहुत सस्ते 'कोल्ड स्टोरेज' (Glacier) में रखकर पैसे बचाए जाते हैं।"),
+
+    # 20: Disaster Recovery (RPO and RTO)
+    ("In cloud disaster recovery planning for library systems, what do 'RPO' and 'RTO' represent?",
+     "पुस्तकालय प्रणालियों के लिए क्लाउड डिजास्टर रिकवरी योजना में 'RPO' और 'RTO' क्या दर्शाते हैं?",
+     "Recovery Point Objective (maximum acceptable data loss timeframe) and Recovery Time Objective (maximum acceptable system downtime)",
+     "रिकवरी प्वाइंट ऑब्जेक्टिव (अधिकतम स्वीकार्य डेटा हानि समय-सीमा) और रिकवरी टाइम ऑब्जेक्टिव (अधिकतम स्वीकार्य सिस्टम डाउनटाइम)",
+     ["Regional Publication Order and Regional Translation Objective", "Return Patron Organization and Return Transaction Order", "Read Protection Operation and Read Term Optimization"],
+     ["क्षेत्रीय प्रकाशन आदेश और क्षेत्रीय अनुवाद उद्देश्य", "रिटर्न संरक्षक संगठन और रिटर्न लेनदेन आदेश", "रीड सुरक्षा संचालन और रीड टर्म अनुकूलन"],
+     "RPO dictates how frequently backups occur (e.g. 1 hour of lost transactions), and RTO dictates how quickly the backup server must resume operation following a disaster.",
+     "RPO का मतलब है कि आपदा आने पर अधिकतम कितने समय का डेटा खोना स्वीकार्य है (जैसे 1 घंटा), और RTO का मतलब है कि सिस्टम कितनी देर में दोबारा चालू हो जाना चाहिए।"),
+
+    # 21: Service Level Agreements (SLAs)
+    ("What is the primary function of a Service Level Agreement (SLA) when a library contracts cloud hosting services?",
+     "जब कोई पुस्तकालय क्लाउड होस्टिंग सेवाओं का अनुबंध करता है तो सर्विस लेवल एग्रीमेंट (SLA) का प्राथमिक कार्य क्या है?",
+     "A legally binding contract defining performance guarantees, monthly uptime percentage (e.g., 99.9%), support response times, and financial penalties for outages",
+     "प्रदर्शन गारंटी, मासिक अपटाइम प्रतिशत (जैसे, 99.9%), समर्थन प्रतिक्रिया समय और आउटेज के लिए वित्तीय दंड को परिभाषित करने वाला एक कानूनी रूप से बाध्यकारी अनुबंध",
+     ["A contract forcing the library to surrender ownership of all intellectual copyright to the vendor", "A document requiring library patrons to pass an IT exam before using web browsers", "An agreement mandating that the cloud provider physically demolish the library building"],
+     ["पुस्तकालय को विक्रेता को सभी बौद्धिक कॉपीराइट का स्वामित्व आत्मसमर्पण करने के लिए मजबूर करने वाला अनुबंध", "वेब ब्राउज़र का उपयोग करने से पहले पुस्तकालय संरक्षकों को आईटी परीक्षा उत्तीर्ण करने की आवश्यकता वाला दस्तावेज़", "एक समझौता जो अनिवार्य करता है कि क्लाउड प्रदाता भौतिक रूप से पुस्तकालय भवन को ध्वस्त कर दे"],
+     "An SLA protects the library by setting enforceable benchmarks for system availability (e.g., 'Three Nines' 99.9% uptime permits under 44 minutes of downtime per month).",
+     "SLA एक कानूनी अनुबंध है जिसमें क्लाउड कंपनी लिखित गारंटी देती है कि सर्वर 99.9% समय चालू रहेगा और खराबी आने पर कितनी देर में ठीक किया जाएगा, अन्यथा हर्जाना देना होगा।"),
+
+    # 22: Data Sovereignty
+    ("Why is 'Data Sovereignty' a vital compliance consideration when university libraries procure commercial cloud services?",
+     "विश्वविद्यालय के पुस्तकालयों द्वारा वाणिज्यिक क्लाउड सेवाओं की खरीद करते समय 'डेटा संप्रभुता' (Data Sovereignty) एक महत्वपूर्ण अनुपालन विचार क्यों है?",
+     "Digital data is subject to the legal jurisdictions, privacy regulations, and subpoena powers of the country where the physical cloud data center is geographically located",
+     "डिजिटल डेटा उस देश के कानूनी क्षेत्राधिकार, गोपनीयता नियमों और सम्मन शक्तियों के अधीन है जहाँ भौतिक क्लाउड डेटा केंद्र भौगोलिक रूप से स्थित है",
+     ["Because cloud servers physically melt if data is transmitted across international borders", "Because foreign cloud servers cannot read the English or Hindi alphabet scripts", "Because data sovereignty requires that all computers must be powered exclusively by solar panels"],
+     ["क्योंकि यदि डेटा अंतरराष्ट्रीय सीमाओं के पार प्रसारित होता है तो क्लाउड सर्वर भौतिक रूप से पिघल जाते हैं", "क्योंकि विदेशी क्लाउड सर्वर अंग्रेजी या हिंदी वर्णमाला की लिपियों को नहीं पढ़ सकते हैं", "क्योंकि डेटा संप्रभुता के लिए आवश्यक है कि सभी कंप्यूटर विशेष रूप से सौर पैनलों द्वारा संचालित होने चाहिए"],
+     "Data sovereignty laws (such as India's DPDP Act 2023 or EU's GDPR) often require that citizens' personal identifying records and national scholarly heritage remain stored within national borders.",
+     "डेटा संप्रभुता का अर्थ है कि डेटा जिस देश के सर्वर में रखा है, उस देश के कानून उस पर लागू होंगे; इसलिए भारतीय कानूनों के तहत संवेदनशील डेटा भारतीय सीमाओं में ही स्टोर होना चाहिए।"),
+
+    # 23: Indian DPDP Act 2023 & Libraries
+    ("Under India's Digital Personal Data Protection Act, 2023 (DPDP Act), what is an academic library's obligation regarding patron borrowing history?",
+     "भारत के डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 (DPDP Act) के तहत, संरक्षक उधार इतिहास के संबंध में एक शैक्षणिक पुस्तकालय का क्या दायित्व है?",
+     "Obtaining informed consent, processing patron data solely for legitimate specified library purposes, and protecting personal reading histories from unauthorized disclosure",
+     "सूचित सहमति प्राप्त करना, केवल वैध निर्दिष्ट पुस्तकालय उद्देश्यों के लिए संरक्षक डेटा को संसाधित करना, और अनधिकृत प्रकटीकरण से व्यक्तिगत पठन इतिहास की रक्षा करना",
+     ["Selling student reading histories to commercial marketing agencies to earn departmental profit", "Publishing a public leaderboard listing the names and overdue book fines of all failing students", "Sharing student reading habits with private commercial credit scoring bureaus"],
+     ["विभागीय लाभ अर्जित करने के लिए वाणिज्यिक विपणन एजेंसियों को छात्र पठन इतिहास बेचना", "सभी अनुत्तीर्ण छात्रों के नाम और अतिदेय पुस्तक जुर्माने को सूचीबद्ध करने वाला एक सार्वजनिक लीडरबोर्ड प्रकाशित करना", "निजी वाणिज्यिक क्रेडिट स्कोरिंग ब्यूरो के साथ छात्र पढ़ने की आदतों को साझा करना"],
+     "The DPDP Act 2023 mandates that libraries act as responsible 'Data Fiduciaries', strictly safeguarding patrons' intellectual reading privacy and preventing data leakage.",
+     "भारत के DPDP एक्ट 2023 के तहत पुस्तकालय 'डेटा फिड्यूशरी' हैं; वे पाठकों की अनुमति के बिना उनका व्यक्तिगत डेटा या पठन इतिहास किसी तीसरे पक्ष को नहीं दे सकते।"),
+
+    # 24: UGC Mandated Plagiarism Tools
+    ("Which plagiarism detection software has been centrally procured by INFLIBNET Centre under the Ministry of Education for Indian universities?",
+     "शिक्षा मंत्रालय के तहत INFLIBNET केंद्र द्वारा भारतीय विश्वविद्यालयों के लिए कौन सा साहित्यिक चोरी जांच सॉफ्टवेयर केंद्रीय रूप से खरीदा गया है?",
+     "Ouriginal (formerly Urkund) and DrillBit",
+     "ऑरिजिनाल (Ouriginal - पूर्व में Urkund) और ड्रिलबिट (DrillBit)",
+     ["Adobe Photoshop Creative Cloud", "Microsoft Visual Studio Enterprise", "WinZip Archiving Utility Pro"],
+     ["एडोब फोटोशॉप क्रिएटिव क्लाउड", "माइक्रोसॉफ्ट विजुअल स्टूडियो एंटरप्राइज", "विनज़िप आर्काइविंग यूटिलिटी प्रो"],
+     "INFLIBNET's ShodhShuddhi programme provides free access to Ouriginal and indigenous DrillBit to check similarity in master's theses and doctoral dissertations across India.",
+     "INFLIBNET के शोधशुद्धि (ShodhShuddhi) कार्यक्रम के तहत भारतीय विश्वविद्यालयों को साहित्यिक चोरी (Plagiarism) रोकने के लिए Ouriginal (Urkund) और DrillBit सॉफ्टवेयर दिए गए हैं।"),
+
+    # 25: UGC Plagiarism Regulations 2018
+    ("Under the UGC (Promotion of Academic Integrity and Prevention of Plagiarism in HEIs) Regulations, 2018, what is Level 2 similarity in a thesis?",
+     "UGC (उच्च शिक्षण संस्थानों में अकादमिक सत्यनिष्ठा और साहित्यिक चोरी की रोकथाम) विनियम, 2018 के तहत, थीसिस में लेवल 2 समानता क्या है?",
+     "Similarity between 40% and 60% (penalized by debarring the student from submitting a revised script for one year)",
+     "40% और 60% के बीच समानता (छात्र को एक वर्ष के लिए संशोधित शोध प्रबंध प्रस्तुत करने से वंचित करके दंडित किया जाता है)",
+     ["Similarity up to 10%", "Similarity between 10% and 40%", "Similarity above 60%"],
+     ["10% तक समानता", "10% और 40% के बीच समानता", "60% से अधिक समानता"],
+     "UGC defines: Level 0 (up to 10% - no penalty); Level 1 (10%-40% - revise within 6 months); Level 2 (40%-60% - debarred 1 year); Level 3 (>60% - registration canceled).",
+     "UGC नियमों के अनुसार: लेवल 0 (10% तक - कोई दंड नहीं), लेवल 1 (10-40% - 6 महीने में सुधार), लेवल 2 (40-60% - 1 साल का प्रतिबंध), और लेवल 3 (60% से अधिक - पंजीकरण रद्द)।"),
+
+    # 26: AI Shelf-Reading Robots
+    ("How do autonomous shelf-reading robots equipped with RFID and computer vision assist library circulation management?",
+     "RFID और कंप्यूटर विज़न से लैस स्वायत्त शेल्फ-रीडिंग रोबोट पुस्तकालय संचलन प्रबंधन में कैसे सहायता करते हैं?",
+     "Autonomously navigating book aisles overnight, scanning thousands of RFID tags to identify misshelved books and generate precise shelf-rectification maps",
+     "रात भर पुस्तक गलियारों में स्वायत्त रूप से नेविगेट करना, गलत जगह रखी पुस्तकों की पहचान करने और सटीक शेल्फ-सुधार मानचित्र बनाने के लिए हजारों RFID टैग स्कैन करना",
+     ["Physically destroying books that have not been borrowed by students during the past month", "Eavesdropping on student whispers and ejecting loud patrons from the building", "Permanently welding library bookshelves to prevent human readers from removing volumes"],
+     ["पिछले महीने के दौरान छात्रों द्वारा उधार नहीं ली गई पुस्तकों को भौतिक रूप से नष्ट करना", "छात्रों की फुसफुसाहट को छिपकर सुनना और इमारत से ज़ोर से बोलने वाले संरक्षकों को बाहर निकालना", "मानव पाठकों को प्रतियां निकालने से रोकने के लिए पुस्तकालय की किताबों की अलमारियों को स्थायी रूप से वेल्डिंग करना"],
+     "Shelf-scanning robots (like AuRoSS or LibRF) solve the chronic library problem of misshelved books by rapidly locating items misplaced on incorrect shelves.",
+     "शेल्फ-रीडिंग रोबोट रात में बंद लाइब्रेरी में घूमकर RFID से हजारों किताबें स्कैन कर लेते हैं और बता देते हैं कि कौन सी किताब गलत अलमारी में रख दी गई है।"),
+
+    # 27: Voice Assistants in Libraries
+    ("How can libraries implement Voice AI assistants (such as Amazon Alexa Skills or Google Assistant Actions)?",
+     "पुस्तकालय वॉयस AI सहायकों (जैसे अमेज़ॅन एलेक्सा स्किल्स या Google असिस्टेंट क्रियाएं) को कैसे लागू कर सकते हैं?",
+     "Enabling patrons to use spoken voice commands to check library opening hours, renew borrowed books, discover study room availability, or listen to audio summaries",
+     "संरक्षकों को पुस्तकालय के खुलने का समय जांचने, उधार ली गई पुस्तकों को नवीनीकृत करने, अध्ययन कक्ष की उपलब्धता खोजने या ऑडियो सारांश सुनने के लिए बोले गए आवाज आदेशों का उपयोग करने में सक्षम बनाना",
+     ["Recording confidential conversations between students and selling audio files to third parties", "Broadcasting loud commercial advertisements over reading room intercoms every fifteen minutes", "Replacing all computer monitors with mandatory voice-activated acoustic speakers"],
+     ["छात्रों के बीच गोपनीय बातचीत रिकॉर्ड करना और तीसरे पक्ष को ऑडियो फाइलें बेचना", "हर पंद्रह मिनट में रीडिंग रूम इंटरकॉम पर ज़ोरदार वाणिज्यिक विज्ञापनों का प्रसारण करना", "अनिवार्य ध्वनि-सक्रिय ध्वनिक वक्ताओं के साथ सभी कंप्यूटर मॉनिटरों को बदलना"],
+     "Voice search skills broaden accessibility, allowing patrons with visual impairments or motor difficulties to interact with library services hands-free.",
+     "वॉयस असिस्टेंट (एलेक्सा/गूगल असिस्टेंट) के जरिए छात्र बोलकर पुस्तकालय का समय पूछ सकते हैं या किताबें रिन्यू करा सकते हैं, जो दृष्टिबाधितों के लिए भी वरदान है।"),
+
+    # 28: Generative AI & Hallucinations
+    ("In the evaluation of Generative AI tools (like ChatGPT or Gemini), what is meant by the term 'Hallucination'?",
+     "जनरेटिव AI टूल्स (जैसे ChatGPT या Gemini) के मूल्यांकन में 'मतिभ्रम / हैलुसिनेशन' (Hallucination) शब्द से क्या तात्पर्य है?",
+     "The AI confidently generating factually incorrect statements, fabricated author names, or non-existent bibliographic journal citations that appear plausible",
+     "AI द्वारा आत्मविश्वास से तथ्यात्मक रूप से गलत कथन, मनगढ़ंत लेखकों के नाम, या गैर-मौजूद ग्रंथसूची जर्नल उद्धरण उत्पन्न करना जो प्रशंसनीय प्रतीत होते हैं",
+     ["The physical overheating of computer processors during high-speed calculations", "A visual optical illusion produced by high-resolution liquid crystal display monitors", "An acoustic sound echo generated when using electronic noise-canceling headphones"],
+     ["उच्च गति गणना के दौरान कंप्यूटर प्रोसेसर का भौतिक रूप से अधिक गर्म होना", "उच्च-रिज़ॉल्यूशन लिक्विड क्रिस्टल डिस्प्ले मॉनिटर द्वारा निर्मित एक दृश्य ऑप्टिकल भ्रम", "इलेक्ट्रॉनिक शोर-रद्द करने वाले हेडफ़ोन का उपयोग करते समय उत्पन्न एक ध्वनिक ध्वनि गूंज"],
+     "Hallucination is a major risk in research; generative models can fabricate realistic-looking citations (fake DOIs, fake authors), requiring librarians to teach critical source verification.",
+     "AI हैलुसिनेशन का मतलब है कि AI आत्मविश्वास के साथ झूठे तथ्य या नकली किताबों/जर्नलों के संदर्भ बना देता है जो असली लगते हैं लेकिन वास्तव में होते नहीं हैं।"),
+
+    # 29: Prompt Engineering
+    ("What is 'Prompt Engineering' and why is it becoming an essential digital literacy skill taught by academic librarians?",
+     "'प्रॉम्प्ट इंजीनियरिंग' (Prompt Engineering) क्या है और यह अकादमिक लाइब्रेरियनों द्वारा सिखाया जाने वाला एक आवश्यक डिजिटल साक्षरता कौशल क्यों बन रहा है?",
+     "The practice of structuring, refining, and contextualizing text inputs to elicit the most accurate, rigorous, and relevant outputs from Generative AI models",
+     "जनरेटिव AI मॉडल से सबसे सटीक, कठोर और प्रासंगिक परिणाम प्राप्त करने के लिए टेक्स्ट इनपुट को संरचित, परिष्कृत और प्रासंगिक बनाने का अभ्यास",
+     ["Writing low-level assembly language code to assemble physical microprocessors", "Repairing mechanical internal springs inside broken typewriter carriage returns", "Adjusting the electrical voltage transformers powering university server buildings"],
+     ["भौतिक माइक्रोप्रोसेसरों को इकट्ठा करने के लिए निम्न-स्तरीय असेंबली भाषा कोड लिखना", "टूटे हुए टाइपराइटर कैरिज रिटर्न के अंदर यांत्रिक आंतरिक स्प्रिंग्स की मरम्मत करना", "विश्वविद्यालय सर्वर भवनों को शक्ति प्रदान करने वाले विद्युत वोल्टेज ट्रांसफार्मर को समायोजित करना"],
+     "Librarians teach prompt engineering (role assignment, few-shot examples, constraints) so students can harness AI for research brainstorming while avoiding garbage outputs.",
+     "प्रॉम्प्ट इंजीनियरिंग AI से सही उत्तर पाने के लिए सटीक और स्पष्ट निर्देश लिखने की कला है; लाइब्रेरियन छात्रों को यह सिखाते हैं ताकि वे AI से बेहतर शोध परिणाम ले सकें।"),
+
+    # 30: Explainable AI (XAI)
+    ("Why is 'Explainable AI' (XAI) crucial in academic discovery and algorithmic research tools?",
+     "अकादमिक खोज और एल्गोरिथम अनुसंधान उपकरणों में 'व्याख्या योग्य AI' (XAI - Explainable AI) क्यों महत्वपूर्ण है?",
+     "It ensures that the reasoning, parameters, and evidence behind an AI's classification or ranking decision can be audited, understood, and trusted by human researchers",
+     "यह सुनिश्चित करता है कि AI के वर्गीकरण या रैंकिंग निर्णय के पीछे के तर्क, पैरामीटर और साक्ष्य का मानव शोधकर्ताओं द्वारा ऑडिट, समझा और भरोसा किया जा सकता है",
+     ["It forces AI software to run at one-tenth of normal computer processing speed", "It converts all complex mathematical equations into simplified children's fairy tales", "It requires computer scientists to write all algorithm instructions using hand-drawn comic strips"],
+     ["यह AI सॉफ्टवेयर को सामान्य कंप्यूटर प्रोसेसिंग गति के दसवें हिस्से पर चलने के लिए मजबूर करता है", "यह सभी जटिल गणितीय समीकरणों को सरलीकृत बच्चों की परियों की कहानियों में परिवर्तित करता है", "इसके लिए कंप्यूटर वैज्ञानिकों को हाथ से तैयार की गई कॉमिक स्ट्रिप्स का उपयोग करके सभी एल्गोरिदम निर्देश लिखने की आवश्यकता होती है"],
+     "Black-box AI models hide why certain papers are recommended; XAI provides transparent provenance, allowing researchers to evaluate potential methodological biases.",
+     "XAI (Explainable AI) का मतलब है कि AI जो भी परिणाम या सिफारिश दे, उसके पीछे का कारण और तर्क स्पष्ट होना चाहिए ताकि शोधकर्ता आँख मूंदकर भरोसा न करें।"),
+
+    # 31: Multi-Tenancy in Cloud ILS
+    ("In SaaS cloud architectures for libraries, what does 'Multi-Tenancy' mean?",
+     "पुस्तकालयों के लिए SaaS क्लाउड आर्किटेक्चर में 'मल्टी-टिनेंसी' (Multi-Tenancy) का क्या अर्थ है?",
+     "A single shared software application instance and infrastructure serves multiple library customers ('tenants') while keeping each library's data strictly isolated and secure",
+     "एक एकल साझा सॉफ्टवेयर एप्लिकेशन इंस्टेंस और इंफ्रास्ट्रक्चर प्रत्येक पुस्तकालय के डेटा को सख्ती से अलग और सुरक्षित रखते हुए कई पुस्तकालय ग्राहकों ('किरायेदारों') की सेवा करता है",
+     ["Ten different librarians sharing a single physical computer keyboard simultaneously", "A library building rented out to ten different commercial retail grocery companies", "Ten computer servers running ten different operating systems in an unlinked network"],
+     ["दस अलग-अलग लाइब्रेरियन एक साथ एक ही भौतिक कंप्यूटर कीबोर्ड साझा करते हैं", "दस अलग-अलग वाणिज्यिक खुदरा किराना कंपनियों को किराए पर दिया गया एक पुस्तकालय भवन", "एक अनलिंक्ड नेटवर्क में दस अलग-अलग ऑपरेटिंग सिस्टम चलाने वाले दस कंप्यूटर सर्वर"],
+     "Multi-tenancy allows cloud vendors (like Ex Libris Alma) to roll out single updates and security patches that instantly benefit thousands of libraries worldwide simultaneously.",
+     "मल्टी-टिनेंसी में एक ही सॉफ्टवेयर इंफ्रास्ट्रक्चर पर सैकड़ों अलग-अलग कॉलेज चलते हैं, लेकिन हर कॉलेज का डेटा पूरी तरह अलग और सुरक्षित रहता है; इससे अपडेट एक साथ सबको मिलते हैं।"),
+
+    # 32: Cloud Elasticity
+    ("What does 'Rapid Elasticity' in cloud computing provide to an academic library during the start of a semester?",
+     "सेमेस्टर की शुरुआत में एक अकादमिक पुस्तकालय को क्लाउड कंप्यूटिंग में 'रैपिड इलास्टिसिटी' (Rapid Elasticity) क्या प्रदान करती है?",
+     "The capability to dynamically scale computing capacity, memory, and bandwidth up to handle heavy registration traffic, and scale down when traffic normalizes",
+     "पंजीकरण के भारी ट्रैफ़िक को संभालने के लिए कंप्यूटिंग क्षमता, मेमोरी और बैंडविड्थ को गतिशील रूप से बढ़ाने और ट्रैफ़िक सामान्य होने पर घटाने की क्षमता",
+     ["The physical elasticity of rubber bands used to bundle overdue library loan slips", "The flexibility of plastic library borrower cards when bent under heavy mechanical pressure", "The ability of server room cooling ducts to stretch across different campus departments"],
+     ["अतिदेय पुस्तकालय ऋण पर्चियों को बंडल करने के लिए उपयोग किए जाने वाले रबर बैंड की भौतिक लोच", "भारी यांत्रिक दबाव में मुड़ने पर प्लास्टिक पुस्तकालय उधारकर्ता कार्ड का लचीलापन", "विभिन्न परिसर विभागों में खिंचाव के लिए सर्वर रूम कूलिंग नलिकाओं की क्षमता"],
+     "Elasticity prevents library portals from crashing under sudden rushes of thousands of concurrent students checking course syllabi and textbook reserves.",
+     "क्लाउड इलास्टिसिटी का अर्थ है कि जब नए सेमेस्टर या परीक्षा में अचानक लाखों छात्र वेबसाइट पर आ जाएं, तो सर्वर अपने आप बड़े हो जाते हैं और भीड़ कम होने पर सामान्य हो जाते हैं।"),
+
+    # 33: Edge Computing vs Cloud Computing
+    ("How does 'Edge Computing' complement centralized Cloud Computing in modern smart library environments?",
+     "आधुनिक स्मार्ट पुस्तकालय वातावरण में 'एज कंप्यूटिंग' (Edge Computing) केंद्रीकृत क्लाउड कंप्यूटिंग का पूरक कैसे है?",
+     "By processing time-critical data locally near the physical sensors or IoT devices (e.g., RFID gates, occupancy cameras) rather than sending all raw streams to a distant cloud",
+     "सभी कच्चे स्ट्रीम को दूर के क्लाउड पर भेजने के बजाय भौतिक सेंसर या IoT उपकरणों (जैसे RFID गेट्स, ऑक्यूपेंसी कैमरा) के पास स्थानीय रूप से महत्वपूर्ण डेटा को संसाधित करके",
+     ["By placing computer monitors on the physical edge of wooden study tables to save floor space", "By restricting library catalog access strictly to patrons who stand near the outer entrance doors", "By deleting ninety percent of all electronic book files from server storage hard drives"],
+     ["फर्श की जगह बचाने के लिए लकड़ी के अध्ययन तालिकाओं के भौतिक किनारे पर कंप्यूटर मॉनिटर रखकर", "पुस्तकालय कैटलॉग पहुंच को सख्ती से उन संरक्षकों तक सीमित करना जो बाहरी प्रवेश द्वार के पास खड़े हैं", "सर्वर स्टोरेज हार्ड ड्राइव से सभी इलेक्ट्रॉनिक पुस्तक फ़ाइलों का नब्बे प्रतिशत हटाना"],
+     "Edge computing delivers ultra-low latency for real-time applications (e.g. anti-theft alarms at entrance gates) while forwarding aggregated analytics to the central cloud.",
+     "एज कंप्यूटिंग में डेटा को दूर के क्लाउड सर्वर पर भेजने के बजाय गेट पर लगे RFID स्कैनर या कैमरे के अंदर ही प्रोसेस कर लिया जाता है, जिससे तुरंत अलार्म बज सके।"),
+
+    # 34: ISO/IEC 27001 Cloud Certification
+    ("Why should a library verify that its cloud hosting provider holds 'ISO/IEC 27001' certification?",
+     "एक पुस्तकालय को यह सत्यापित क्यों करना चाहिए कि उसका क्लाउड होस्टिंग प्रदाता 'ISO/IEC 27001' प्रमाणन रखता है?",
+     "It is the internationally recognized gold standard certifying that the vendor follows rigorous, audited Information Security Management Systems (ISMS)",
+     "यह अंतरराष्ट्रीय स्तर पर मान्यता प्राप्त स्वर्ण मानक है जो प्रमाणित करता है कि विक्रेता कठोर, ऑडिट किए गए सूचना सुरक्षा प्रबंधन प्रणाली (ISMS) का पालन करता है",
+     ["It certifies that the cloud provider only uses paper manufactured from certified pine tree forests", "It guarantees that all software is written using mechanical typewriters without electric power", "It proves that the vendor sells the cheapest computer hardware in the global market"],
+     ["यह प्रमाणित करता है कि क्लाउड प्रदाता केवल प्रमाणित पाइन वृक्ष जंगलों से निर्मित कागज़ का उपयोग करता है", "यह गारंटी देता है कि सभी सॉफ्टवेयर बिना बिजली के मैकेनिकल टाइपराइटर का उपयोग करके लिखे गए हैं", "यह साबित करता है कि विक्रेता वैश्विक बाजार में सबसे सस्ता कंप्यूटर हार्डवेयर बेचता है"],
+     "ISO 27001 guarantees that patron records, research data, and institutional passwords are protected against breaches through verified security controls.",
+     "ISO 27001 यह अंतरराष्ट्रीय गारंटी देता है कि क्लाउड कंपनी का सुरक्षा तंत्र विश्वस्तरीय है और पाठकों का गोपनीय डेटा हैक होने से सुरक्षित रहेगा।"),
+
+    # 35: Elicit and Semantic Scholar
+    ("What unique AI capability do discovery tools like 'Semantic Scholar' and 'Elicit' provide to literature reviewers?",
+     "'सिमेंटिक स्कॉलर' (Semantic Scholar) और 'एलिसिट' (Elicit) जैसे खोज उपकरण साहित्य समीक्षकों को क्या अद्वितीय AI क्षमता प्रदान करते हैं?",
+     "Automatically synthesizing evidence across hundreds of papers, extracting key methodologies, sample sizes, and finding consensus across empirical studies",
+     "सैकड़ों शोध पत्रों में स्वचालित रूप से साक्ष्य का संश्लेषण करना, प्रमुख पद्धतियों, नमूना आकारों को निकालना और अनुभवजन्य अध्ययनों में सहमति खोजना",
+     ["Automatically writing and submitting fake doctoral dissertations without human student involvement", "Deleting published academic papers that contain controversial scientific viewpoints", "Converting peer-reviewed clinical medicine studies into fictional cartoon comic strips"],
+     ["मानव छात्र की भागीदारी के बिना नकली डॉक्टरेट शोध प्रबंधों को स्वचालित रूप से लिखना और जमा करना", "विवादास्पद वैज्ञानिक दृष्टिकोण वाले प्रकाशित अकादमिक पत्रों को हटाना", "सहकर्मी-समीक्षित नैदानिक ​​दवा अध्ययनों को काल्पनिक कार्टून कॉमिक स्ट्रिप्स में परिवर्तित करना"],
+     "These tools use language models to extract structured data from literature, accelerating systemic reviews and identifying research gaps without manual skimming.",
+     "Elicit और Semantic Scholar AI की मदद से सैकड़ों शोध पत्रों को पढ़कर उनके मुख्य परिणाम, नमूना आकार और पद्धतियों का एक तुलनात्मक चार्ट अपने आप बना देते हैं।"),
+
+    # 36: Local Open-Source LLMs (Ollama / Llama 3)
+    ("Why are academic libraries increasingly experimenting with hosting open-source LLMs (such as Llama 3 via Ollama) on local private servers?",
+     "अकादमिक पुस्तकालय स्थानीय निजी सर्वरों पर ओपन-सोर्स LLM (जैसे Ollama के माध्यम से Llama 3) की मेजबानी के साथ तेजी से प्रयोग क्यों कर रहे हैं?",
+     "To ensure absolute patron privacy and data protection, preventing sensitive research queries and unpublished manuscripts from being sent to commercial third-party cloud APIs",
+     "पूर्ण संरक्षक गोपनीयता और डेटा सुरक्षा सुनिश्चित करने के लिए, संवेदनशील अनुसंधान प्रश्नों और अप्रकाशित पांडुलिपियों को वाणिज्यिक तृतीय-पक्ष क्लाउड एपीआई पर भेजे जाने से रोकना",
+     ["Because open-source models completely eliminate the need for computer graphics processing units", "Because local models guarantee that no computer hardware will ever consume electrical power", "Because commercial cloud AI models refuse to process queries related to history or literature"],
+     ["क्योंकि ओपन-सोर्स मॉडल कंप्यूटर ग्राफिक्स प्रोसेसिंग इकाइयों की आवश्यकता को पूरी तरह से समाप्त करते हैं", "क्योंकि स्थानीय मॉडल गारंटी देते हैं कि कोई भी कंप्यूटर हार्डवेयर कभी भी विद्युत शक्ति का उपभोग नहीं करेगा", "क्योंकि वाणिज्यिक क्लाउड AI मॉडल इतिहास या साहित्य से संबंधित प्रश्नों को संसाधित करने से इनकार करते हैं"],
+     "Local hosting of open weights gives institutions total sovereignty over their data, aligning with the core library ethic of patron confidentiality.",
+     "अपने खुद के सर्वर पर Llama 3 जैसे ओपन-सोर्स मॉडल चलाने से यह फायदा होता है कि शोधकर्ताओं के गुप्त विचार और थीसिस ओपनएआई या गूगल के क्लाउड पर लीक नहीं होते।"),
+
+    # 37: Cloud-Based Discovery Systems
+    ("Which of the following is a leading cloud-based discovery service deployed by academic libraries worldwide?",
+     "निम्नलिखित में से कौन सी अकादमिक पुस्तकालयों द्वारा दुनिया भर में तैनात एक प्रमुख क्लाउड-आधारित खोज सेवा है?",
+     "Ex Libris Primo (and ProQuest Summon / EBSCO Discovery Service)",
+     "एक्स लिब्रिस प्राइमो (Primo) और प्रोक्वेस्ट समन (Summon) / एब्सको डिस्कवरी सर्विस (EDS)",
+     ["Adobe Illustrator Creative Suite", "Microsoft Flight Simulator X", "Apple Final Cut Pro Video"],
+     ["एडोब इलस्ट्रेटर क्रिएटिव सूट", "माइक्रोसॉफ्ट फ्लाइट सिम्युलेटर X", "एप्पल फाइनल कट प्रो वीडियो"],
+     "Cloud discovery platforms aggregate local catalog records, institutional repositories, and vendor mega-indexes into a single unified Google-like search bar.",
+     "Primo और Summon जैसे क्लाउड डिस्कवरी सिस्टम कॉलेज की किताबों, शोध पत्रों और बाहरी ऑनलाइन डेटाबेसों को एक ही गूगल जैसे सर्च बॉक्स में लाकर खोज देते हैं।"),
+
+    # 38: Green Computing in Cloud
+    ("How does transitioning from legacy on-premise library server rooms to hyperscale cloud providers contribute to 'Green Computing'?",
+     "पारंपरिक ऑन-प्रिमाइसेस पुस्तकालय सर्वर रूम से हाइपरस्केल क्लाउड प्रदाताओं में संक्रमण 'ग्रीन कंप्यूटिंग' में कैसे योगदान देता है?",
+     "Hyperscale data centers achieve vastly superior Power Usage Effectiveness (PUE) and utilize renewable energy sources, drastically lowering carbon emissions",
+     "हाइपरस्केल डेटा केंद्र अत्यधिक बेहतर पावर यूसेज इफेक्टिवनेस (PUE) प्राप्त करते हैं और नवीकरणीय ऊर्जा स्रोतों का उपयोग करते हैं, जिससे कार्बन उत्सर्जन में भारी कमी आती है",
+     ["By requiring that all computer servers be physically manufactured using recycled cardboard boxes", "By permanently shutting down the internet connection during the winter months of the year", "By replacing electronic data storage with physical stone tablets carved by hand"],
+     ["इसके लिए आवश्यक है कि सभी कंप्यूटर सर्वर भौतिक रूप से पुनर्चक्रित कार्डबोर्ड बक्से का उपयोग करके निर्मित किए जाएं", "वर्ष के सर्दियों के महीनों के दौरान इंटरनेट कनेक्शन को स्थायी रूप से बंद करके", "इलेक्ट्रॉनिक डेटा भंडारण को हाथ से तराशी गई भौतिक पत्थर की गोलियों से बदलकर"],
+     "Large cloud centers (AWS, Google, Microsoft) run cooling systems and custom silicon with near-optimal energy efficiency compared to aging departmental computer closets.",
+     "बड़े क्लाउड डेटा केंद्र बहुत कम बिजली में कुशल कूलिंग और सौर ऊर्जा का इस्तेमाल करते हैं, जिससे कॉलेज के पुराने और गर्म सर्वर रूम की तुलना में कार्बन प्रदूषण बहुत कम होता है।"),
+
+    # 39: Robotic Process Automation (RPA)
+    ("How does Robotic Process Automation (RPA) streamline back-office technical processing in academic libraries?",
+     "रोबोटिक प्रोसेस ऑटोमेशन (RPA) अकादमिक पुस्तकालयों में बैक-ऑफिस तकनीकी प्रसंस्करण को कैसे सुव्यवस्थित करता है?",
+     "Deploying software bots to automate repetitive administrative tasks like batch-downloading vendor MARC records, processing serials claim notices, and reconciling invoice payments",
+     "विक्रेता MARC रिकॉर्ड्स को बैच-डाउनलोड करने, पत्रिकाओं के दावा नोटिस को संसाधित करने और चालान भुगतानों का मिलान करने जैसे दोहराव वाले प्रशासनिक कार्यों को स्वचालित करने के लिए सॉफ्टवेयर बॉट तैनात करना",
+     ["Using physical humanoid robots to carry heavy stacks of paper books between floors", "Employing mechanical androids to vacuum clean library carpets during opening hours", "Replacing university librarians with automated mechanical checkout turnstiles"],
+     ["फर्शों के बीच कागज़ की किताबों के भारी ढेरों को ले जाने के लिए भौतिक ह्यूमनॉइड रोबोट का उपयोग करना", "खुलने के समय पुस्तकालय के कालीनों को वैक्यूम साफ करने के लिए मैकेनिकल एंड्रॉइड को नियोजित करना", "विश्वविद्यालय के लाइब्रेरियनों को स्वचालित यांत्रिक चेकआउट टर्नस्टाइल से बदलना"],
+     "RPA bots execute rule-based software routines without error, freeing technical services staff from monotonous data entry.",
+     "RPA सॉफ्टवेयर बॉट्स बिलों का मिलान करने, नई किताबों के MARC रिकॉर्ड डाउनलोड करने और पत्रिकाओं के नोटिस भेजने जैसे उबाऊ काम अपने आप बिना गलती के कर देते हैं।"),
+
+    # 40: Predictive Analytics in Collection Development
+    ("How do libraries utilize Machine Learning predictive analytics in collection development?",
+     "पुस्तकालय संग्रह विकास में मशीन लर्निंग प्रेडिक्टिव एनालिटिक्स का उपयोग कैसे करते हैं?",
+     "Analyzing historical borrowing patterns, course enrollment data, and syllabus trends to forecast which monograph subjects and journal subscriptions will experience high demand",
+     "ऐतिहासिक उधार पैटर्न, पाठ्यक्रम नामांकन डेटा और पाठ्यक्रम प्रवृत्तियों का विश्लेषण करके यह अनुमान लगाना कि किन मोनोग्राफ विषयों और जर्नल सदस्यताओं की उच्च मांग होगी",
+     ["Randomly purchasing books based on the bright color of their cover illustrations", "Buying every book published worldwide regardless of departmental relevance or cost", "Canceling all science journal subscriptions to purchase antique fiction novels"],
+     ["उनकी कवर छवियों के चमकीले रंग के आधार पर यादृच्छिक रूप से पुस्तकें खरीदना", "विभागीय प्रासंगिकता या लागत की परवाह किए बिना दुनिया भर में प्रकाशित प्रत्येक पुस्तक खरीदना", "प्राचीन काल्पनिक उपन्यासों को खरीदने के लिए सभी विज्ञान पत्रिका सदस्यताओं को रद्द करना"],
+     "Predictive models prevent wasteful budget expenditure by identifying underutilized resource subscriptions and recommending high-impact acquisitions.",
+     "मशीन लर्निंग पिछले वर्षों के आंकड़े देखकर पहले ही बता देता है कि अगले सेमेस्टर में किस विषय की किताबों की मांग बढ़ेगी और कौन से महंगे जर्नल बेकार पड़े हैं।"),
+
+    # 41: AI and Copyright Lawsuits
+    ("What is the central legal controversy surrounding Generative AI models and library collections in copyright law?",
+     "कॉपीराइट कानून में जनरेटिव AI मॉडल और पुस्तकालय संग्रहों के आसपास का केंद्रीय कानूनी विवाद क्या है?",
+     "Whether ingesting millions of copyrighted books and articles without permission to train commercial LLMs constitutes lawful 'Fair Use' or massive copyright infringement",
+     "क्या वाणिज्यिक एलएलएम (LLMs) को प्रशिक्षित करने के लिए बिना अनुमति के लाखों कॉपीराइट वाली किताबों और लेखों को शामिल करना वैध 'उचित उपयोग' (Fair Use) है या बड़े पैमाने पर कॉपीराइट उल्लंघन",
+     ["Whether computer software can physically hold legal citizenship in sovereign nations", "Whether printed books can sue digital scanners for taking high-resolution photographs", "Whether libraries should be legally prohibited from purchasing computers"],
+     ["क्या कंप्यूटर सॉफ्टवेयर संप्रभु राष्ट्रों में कानूनी नागरिकता रख सकता है", "क्या मुद्रित पुस्तकें उच्च-रिज़ॉल्यूशन तस्वीरें लेने के लिए डिजिटल स्कैनर पर मुकदमा कर सकती हैं", "क्या पुस्तकालयों को कंप्यूटर खरीदने से कानूनी रूप से प्रतिबंधित किया जाना चाहिए"],
+     "Major lawsuits (e.g., Authors Guild v. OpenAI) examine whether commercial AI training on library texts transforms the work or infringes on authors' exclusive reproduction rights.",
+     "यह दुनिया भर की अदालतों में बड़ा विवाद है कि क्या लेखकों की कॉपीराइट किताबों को बिना अनुमति AI को सिखाने (ट्रेनिंग) में इस्तेमाल करना 'उचित उपयोग' है या बौद्धिक चोरी।"),
+
+    # 42: Automated Abstracting
+    ("What is the difference between 'Extractive' and 'Abstractive' AI text summarization applied to scholarly literature?",
+     "विद्वत्तापूर्ण साहित्य पर लागू 'निष्कर्षण' (Extractive) और 'संक्षेपण' (Abstractive) AI पाठ सारांशीकरण के बीच क्या अंतर है?",
+     "Extractive selects and copies existing key sentences directly from the text; Abstractive paraphrases and generates entirely new sentences synthesizing the core ideas",
+     "एक्सट्रैक्टिव (Extractive) सीधे पाठ से मौजूदा प्रमुख वाक्यों को चुनता और कॉपी करता है; एब्सट्रैक्टिव (Abstractive) मूल विचारों को संश्लेषित करते हुए पूरी तरह से नए वाक्यों की व्याख्या और निर्माण करता है",
+     ["Extractive deletes the introduction, while Abstractive deletes the bibliography section", "Extractive translates text into Spanish, while Abstractive translates text into French", "Extractive requires human handwriting, while Abstractive requires typing on a computer"],
+     ["एक्सट्रैक्टिव परिचय को हटा देता है, जबकि एब्सट्रैक्टिव ग्रंथसूची अनुभाग को हटा देता है", "एक्सट्रैक्टिव टेक्स्ट का स्पेनिश में अनुवाद करता है, जबकि एब्सट्रैक्टिव टेक्स्ट का फ्रेंच में अनुवाद करता है", "एक्सट्रैक्टिव को मानव लिखावट की आवश्यकता होती है, जबकि एब्सट्रैक्टिव को कंप्यूटर पर टाइप करने की आवश्यकता होती है"],
+     "Traditional NLP used extractive summaries (picking original sentences); modern LLMs generate abstractive summaries that condense complex methodology into concise human prose.",
+     "एक्सट्रैक्टिव समरी मूल लेख में से ही मुख्य वाक्य छांटकर अलग कर देती है; जबकि आधुनिक एब्सट्रैक्टिव AI सारांश को अपने शब्दों में एक नए और सरल रूप में लिखता है।"),
+
+    # 43: AI Triage at Reference Desks
+    ("How does an 'AI Triage' system operate at a busy academic library reference desk?",
+     "एक व्यस्त अकादमिक पुस्तकालय संदर्भ डेस्क पर एक 'AI ट्राइएज' (AI Triage) प्रणाली कैसे काम करती है?",
+     "Instantly answering repetitive directional inquiries (Wi-Fi access, building hours, printer locations) and routing complex research consultations directly to human subject specialists",
+     "दोहराए जाने वाले दिशात्मक प्रश्नों (वाई-फाई पहुंच, भवन का समय, प्रिंटर स्थान) का तुरंत उत्तर देना और जटिल शोध परामर्शों को सीधे मानव विषय विशेषज्ञों को अग्रेषित करना",
+     ["Locking the library entrance doors whenever more than fifty patrons attempt to enter", "Automatically charging students per-minute consultation fees for asking research questions", "Replacing all reference books with mechanical slot machines"],
+     ["जब भी पचास से अधिक संरक्षक प्रवेश करने का प्रयास करते हैं तो पुस्तकालय के प्रवेश द्वारों को बंद करना", "शोध प्रश्न पूछने के लिए छात्रों से स्वचालित रूप से प्रति मिनट परामर्श शुल्क लेना", "सभी संदर्भ पुस्तकों को यांत्रिक स्लॉट मशीनों से बदलना"],
+     "Reference triage ensures that patrons receive immediate answers to simple queries while ensuring human reference librarians spend quality time on specialized research assistance.",
+     "AI ट्राइएज साधारण सवालों (जैसे प्रिंटर कहाँ है, लाइब्रेरी कब बंद होगी) के जवाब तुरंत बॉट से दिलवा देता है, और गहरे शोध सवालों को सीधे संबंधित विषय लाइब्रेरियन के पास भेजता है।"),
+
+    # 44: Vendor Lock-in in Cloud Computing
+    ("What is 'Vendor Lock-in' and why is it a serious operational risk for libraries moving to the cloud?",
+     "'वेंडर लॉक-इन' (Vendor Lock-in) क्या है और यह क्लाउड पर जाने वाले पुस्तकालयों के लिए एक गंभीर परिचालन जोखिम क्यों है?",
+     "Becoming dependent on a single commercial cloud provider's proprietary data schemas and APIs, making future migration to another platform prohibitively expensive and difficult",
+     "एक ही वाणिज्यिक क्लाउड प्रदाता के मालिकाना डेटा स्कीमा और एपीआई पर निर्भर होना, जिससे भविष्य में किसी अन्य प्लेटफॉर्म पर माइग्रेशन अत्यधिक महंगा और कठिन हो जाता है",
+     ["A physical padlock installed on the main entrance door of the university library server room", "A security feature that prevents computer monitors from being stolen from reading rooms", "A contract requiring librarians to buy all their groceries from a designated supermarket chain"],
+     ["विश्वविद्यालय पुस्तकालय सर्वर कक्ष के मुख्य प्रवेश द्वार पर स्थापित एक भौतिक ताला", "एक सुरक्षा सुविधा जो कंप्यूटर मॉनिटरों को रीडिंग रूम से चोरी होने से रोकती है", "एक अनुबंध जिसके तहत लाइब्रेरियनों को एक निर्दिष्ट सुपरमार्केट श्रृंखला से अपना सारा किराना सामान खरीदना होगा"],
+     "Libraries mitigate vendor lock-in by demanding open standard export formats (JSON, XML, MARC21, Dublin Core) and adherence to open protocols (OAI-PMH).",
+     "वेंडर लॉक-इन का खतरा तब होता है जब कोई क्लाउड कंपनी अपने सॉफ्टवेयर को ऐसा बना देती है कि बाद में डेटा किसी दूसरे सॉफ्टवेयर में ले जाना बहुत कठिन हो जाता है।"),
+
+    # 45: Computer Vision in Archival Imaging
+    ("How does Computer Vision technology assist rare book conservators and digital preservationists?",
+     "कंप्यूटर विज़न तकनीक दुर्लभ पुस्तक संरक्षकों और डिजिटल संरक्षणवादियों की कैसे सहायता करती है?",
+     "Detecting microscopic paper tears, fungal biodeterioration patterns, water stains, and ink fading across high-resolution digital scans automatically",
+     "उच्च-रिज़ॉल्यूशन डिजिटल स्कैन में सूक्ष्म कागज़ के फटने, कवक बायोडेटेरियोरेशन पैटर्न, पानी के दाग और स्याही के लुप्त होने का स्वचालित रूप से पता लगाना",
+     ["Automatically shredding fragile historical documents that show signs of aging", "Printing plastic barcode stickers directly over ancient handwritten calligraphy ink", "Converting rare centuries-old manuscripts into modern cartoon graphic novels"],
+     ["उम्र बढ़ने के लक्षण दिखाने वाले नाजुक ऐतिहासिक दस्तावेजों को स्वचालित रूप से नष्ट करना", "प्राचीन हस्तलिखित सुलेख स्याही के ऊपर सीधे प्लास्टिक बारकोड स्टिकर प्रिंट करना", "दुर्लभ सदियों पुरानी पांडुलिपियों को आधुनिक कार्टून ग्राफिक उपन्यासों में परिवर्तित करना"],
+     "Computer vision algorithms analyze multi-spectral images to identify parchment degradation early, helping conservators prioritize physical restoration.",
+     "कंप्यूटर विज़न हाई-रिज़ॉल्यूशन स्कैन देखकर अपने आप पहचान लेता है कि किस पांडुलिपि में फफूंद, कीड़े या कागज़ का क्षरण शुरू हुआ है, जिससे तुरंत उसका उपचार किया जा सके।"),
+
+    # 46: AI Literacy in Academic Libraries
+    ("Why is 'AI Information Literacy' emerging as a core instructional mission for 21st-century academic libraries?",
+     "21वीं सदी के अकादमिक पुस्तकालयों के लिए 'AI सूचना साक्षरता' एक मुख्य शिक्षण मिशन के रूप में क्यों उभर रही है?",
+     "Empowering students to critically evaluate AI-generated outputs, understand ethical implications, verify cited sources, and navigate academic integrity guidelines",
+     "छात्रों को AI-जनित परिणामों का गंभीर रूप से मूल्यांकन करने, नैतिक निहितार्थों को समझने, उद्धृत स्रोतों को सत्यापित करने और अकादमिक सत्यनिष्ठा दिशानिर्देशों को नेविगेट करने के लिए सशक्त बनाना",
+     ["Teaching students how to copy AI essays directly to complete homework without reading", "Forbidding students from using any electronic computers or calculators inside campus classrooms", "Mandating that all university coursework must be evaluated exclusively by automated computer bots"],
+     ["छात्रों को बिना पढ़े होमवर्क पूरा करने के लिए सीधे AI निबंधों को कॉपी करना सिखाना", "परिसर की कक्षाओं के अंदर किसी भी इलेक्ट्रॉनिक कंप्यूटर या कैलकुलेटर का उपयोग करने से छात्रों को रोकना", "यह अनिवार्य करना कि सभी विश्वविद्यालय शोध कार्य का मूल्यांकन विशेष रूप से स्वचालित कंप्यूटर बॉट्स द्वारा किया जाना चाहिए"],
+     "Just as librarians historically taught how to evaluate web search results, they now teach students how to identify AI hallucinations, biases, and copyright considerations.",
+     "जैसे लाइब्रेरियन इंटरनेट पर सही जानकारी पहचानना सिखाते थे, वैसे ही अब वे सिखाते हैं कि AI द्वारा लिखी गई बातों की सत्यता कैसे जांची जाए और साहित्यिक चोरी से कैसे बचा जाए।"),
+
+    # 47: Federated Cloud Backup
+    ("How does a 'Federated Cloud Backup' strategy enhance preservation resilience for institutional repositories?",
+     "एक 'फेडरेटेड क्लाउड बैकअप' रणनीति संस्थागत रिपॉजिटरी के लिए संरक्षण लचीलेपन को कैसे बढ़ाती है?",
+     "Distributing identical, verifiable encrypted digital copies across geographically separate cloud availability zones and different cloud providers to eliminate single points of failure",
+     "विफलता के एकल बिंदुओं को समाप्त करने के लिए भौगोलिक रूप से अलग क्लाउड उपलब्धता क्षेत्रों और विभिन्न क्लाउड प्रदाताओं में समान, सत्यापन योग्य एन्क्रिप्टेड डिजिटल प्रतियां वितरित करना",
+     ["Storing all repository data on a single rewritable CD-ROM kept in the chief librarian's desk drawer", "Deleting historical research papers once they reach ten years of age to conserve disk space", "Restricting digital repository access exclusively to computers physically plugged into campus wall sockets"],
+     ["मुख्य लाइब्रेरियन की डेस्क दराज में रखी एक एकल रीराइटेबल सीडी-रोम पर सभी रिपॉजिटरी डेटा संग्रहीत करना", "डिस्क स्थान बचाने के लिए दस वर्ष की आयु तक पहुंचने पर ऐतिहासिक शोध पत्रों को हटाना", "डिजिटल रिपॉजिटरी पहुंच को विशेष रूप से परिसर की दीवार के सॉकेट्स में प्लग किए गए कंप्यूटरों तक सीमित करना"],
+     "Geographic federation ensures that even if an entire cloud region suffers an extreme outage or natural disaster, the scholarly record remains intact and restorable.",
+     "फेडरेटेड क्लाउड बैकअप में डेटा को अलग-अलग शहरों और अलग-अलग कंपनियों के क्लाउड में रखा जाता है, ताकि भूकंप या युद्ध में भी शोध रिकॉर्ड कभी नष्ट न हो।"),
+
+    # 48: Ranganathan's Laws & AI / Cloud
+    ("How do AI and Cloud Computing combined fulfill S. R. Ranganathan's Second Law ('Every Reader His/Her Book') and Third Law ('Every Book Its Reader')?",
+     "AI और क्लाउड कंप्यूटिंग मिलकर डॉ. रंगनाथन के दूसरे नियम ('प्रत्येक पाठक को उसकी पुस्तक') और तीसरे नियम ('प्रत्येक पुस्तक को उसका पाठक') को कैसे पूरा करते हैं?",
+     "By democratizing global 24/7 cloud access to vast scholarly collections while AI personalization matches niche research texts with the exact scholars who need them",
+     "विशाल विद्वत्तापूर्ण संग्रहों तक वैश्विक 24/7 क्लाउड पहुंच का लोकतंत्रीकरण करके, जबकि AI वैयक्तिकरण विशिष्ट शोध ग्रंथों को उन सटीक विद्वानों से मिलाता है जिन्हें उनकी आवश्यकता है",
+     ["By permanently locking library collections inside remote subterranean bunkers away from human readers", "By forcing all citizens to read the exact same identical book on the same calendar day", "By eliminating all libraries and replacing books with commercial advertising commercials"],
+     ["मानव पाठकों से दूर दूरस्थ भूमिगत बंकरों के अंदर पुस्तकालय संग्रहों को स्थायी रूप से बंद करके", "सभी नागरिकों को एक ही कैलेंडर दिन में बिल्कुल एक ही किताब पढ़ने के लिए मजबूर करके", "सभी पुस्तकालयों को समाप्त करके और किताबों को वाणिज्यिक विज्ञापनों से बदलकर"],
+     "Cloud computing removes physical distance barriers, and AI algorithms connect obscure, specialized research with researchers worldwide, bringing books and readers together at scale.",
+     "क्लाउड ने भौगोलिक दूरियों को मिटा दिया है और AI दुर्लभ व विशिष्ट किताबों को ठीक उन शोधकर्ताओं से मिला देता है जिन्हें उनकी ज़रूरत है, जिससे रंगनाथन के दोनों नियम चरितार्थ होते हैं।")
+]
+
+print(f"Total Q97 items: {len(q97_items)}")
+assert len(q97_items) == 48
+
+with open("build_u5_q97.py", "w", encoding="utf-8") as f:
+    f.write("# -*- coding: utf-8 -*-\n")
+    f.write('"""\nSlot Q97: Artificial Intelligence, Chatbots & Cloud Computing in Libraries - 48 items.\n"""\n\n')
+    f.write("q97_pool = [\n")
+    for item in q97_items:
+        f.write(f"    {repr(item)},\n")
+    f.write("]\n")
+    f.write("print('Q97 loaded, count:', len(q97_pool))\n")
+
+print("Created build_u5_q97.py successfully!")
