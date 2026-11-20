@@ -22,19 +22,33 @@ import pool_gs_history
 import pool_gs_science
 import pool_gs_reasoning
 import batch_paper_builder
+import generate_bilingual_pdf as p1
+import generate_bilingual_pdf_02 as p2
 
 def get_question_hash(q):
     txt = f"{q.get('q_en', '').strip().lower()}|{q.get('q_hi', '').strip().lower()}"
     return hashlib.sha256(txt.encode('utf-8')).hexdigest()
 
 REGISTRY_FILE = "question_dedup_registry.json"
-with open(REGISTRY_FILE, "r", encoding="utf-8") as f:
-    reg = json.load(f)
 
-registered_hashes = set(reg["registered_hashes"])
-papers_generated = list(reg["papers_generated"])
+# Initialize with Paper 01 and Paper 02 questions
+qs1 = p1.BILINGUAL_QUESTIONS + p1.BILINGUAL_U2_U3 + p1.BILINGUAL_U4_U5 + p1.BILINGUAL_PART2_GS
+qs2 = p2.PAPER02_U1_U3_QUESTIONS + p2.PAPER02_U4_U5_QUESTIONS + p2.BILINGUAL_MOCK02_PART2_GS
 
-print(f"Starting Master Generation Loop. Current registered hashes: {len(registered_hashes)}")
+registered_hashes = set()
+for q in qs1:
+    registered_hashes.add(get_question_hash(q))
+for q in qs2:
+    registered_hashes.add(get_question_hash(q))
+
+assert len(registered_hashes) == 300, f"Expected 300 hashes for Papers 1 & 2, got {len(registered_hashes)}"
+
+papers_generated = [
+    "Bihar_Librarian_Bilingual_Mock_01.pdf",
+    "Bihar_Librarian_Bilingual_Mock_02.pdf"
+]
+
+print(f"Starting Master Generation Loop. Papers 1 & 2 registered: {len(registered_hashes)} hashes.")
 
 start_total_time = time.time()
 
@@ -79,9 +93,11 @@ for paper_num in range(3, 51):
     print(f"[{paper_num:02d}/50] Rendered {pdf_filename} | {num_pages} pages | {file_size_kb:.1f} KB | Time: {t1-t0:.2f}s | Total Qs: {len(registered_hashes)}")
 
 # 4. Save final registry
-reg["total_unique_questions_registered"] = len(registered_hashes)
-reg["papers_generated"] = papers_generated
-reg["registered_hashes"] = list(registered_hashes)
+reg = {
+    "total_unique_questions_registered": len(registered_hashes),
+    "papers_generated": papers_generated,
+    "registered_hashes": list(registered_hashes)
+}
 
 with open(REGISTRY_FILE, "w", encoding="utf-8") as f:
     json.dump(reg, f, indent=2, ensure_ascii=False)

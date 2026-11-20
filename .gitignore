@@ -13,3 +13,10 @@ subagent2_*
 Bihar_Librarian_LET_Model_Paper_01.pdf
 formatted_message.txt
 fix_*.py
+scratch_*.py
+expand_*.py
+update_*.py
+sanitize_*.py
+build_and_run_sanitizer.py
+assemble_*.py
+verify_*.py
