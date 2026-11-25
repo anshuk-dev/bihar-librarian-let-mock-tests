@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sepia" data-lang="bi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Bihar LET Practice Set — 3000 Core LIS Questions &amp; Chronology</title>
+  <meta name="description" content="Bihar Library Eligibility Test (LET) 3000 Verified Core Library Science &amp; LIS-IT Bilingual Practice Questions with Complete Correct + Incorrect Option Explanations &amp; Year Chronology for 4-Day Rapid Revision." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Slim Progress / Loading Bar -->
+  <div id="top-loader" class="top-loader hidden"></div>
+
+  <!-- Main App Shell -->
+  <div id="app-shell" class="app-shell">
+    <!-- Sticky Header -->
+    <header id="main-header" class="main-header">
+      <div class="header-inner">
+        <div class="brand-row">
+          <div class="brand">
+            <span class="brand-badge">BIHAR LET</span>
+            <div class="brand-text">
+              <h1>3000 Core LIS Practice &amp; Rapid Revision</h1>
+              <p class="brand-sub">Set 1 (1500 Main) + Set 2 (1500 Deep) • All 4 Options Explained + Year Chronology</p>
+            </div>
+          </div>
+
+          <div class="header-actions">
+            <!-- Reading Mode: Revise (Answers Open) vs Recall (Tap to Reveal) -->
+            <div class="segmented" role="group" aria-label="Study Mode">
+              <button id="btn-mode-revise" class="seg-btn active" title="Show correct &amp; wrong explanations immediately for fast reading">
+                📖 Revise
+              </button>
+              <button id="btn-mode-recall" class="seg-btn" title="Hide answer until you tap an option or click Reveal">
+                🧠 Practice
+              </button>
+            </div>
+
+            <!-- Language Toggle -->
+            <div class="segmented" role="group" aria-label="Language">
+              <button class="seg-btn lang-btn active" data-lang="bi" title="Hindi + English">हिं+EN</button>
+              <button class="seg-btn lang-btn" data-lang="hi" title="केवल हिन्दी">हिन्दी</button>
+              <button class="seg-btn lang-btn" data-lang="en" title="English Only">EN</button>
+            </div>
+
+            <!-- Font Size -->
+            <div class="font-controls" aria-label="Font size">
+              <button id="btn-font-dec" class="icon-btn" title="Decrease font size">A-</button>
+              <button id="btn-font-inc" class="icon-btn" title="Increase font size">A+</button>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="segmented" role="group" aria-label="Theme">
+              <button class="seg-btn theme-btn" data-theme="light" title="Paper Light">☀️</button>
+              <button class="seg-btn theme-btn active" data-theme="sepia" title="Warm Sepia (Low Eye Strain)">📜</button>
+              <button class="seg-btn theme-btn" data-theme="dark" title="Night Study">🌙</button>
+            </div>
+
+            <!-- Focus Mode Toggle -->
+            <button id="btn-focus-toggle" class="focus-cta" title="Distraction-free 1-question focus mode (Shortcut: F)">
+              🎯 Focus View
+            </button>
+          </div>
+        </div>
+
+        <!-- Primary Navigation Tabs -->
+        <nav class="nav-tabs" aria-label="Views and Volumes">
+          <button class="nav-tab active" data-view="set1">
+            📘 Set 1: Main Core <span class="count-pill" id="pill-set1">1500</span>
+          </button>
+          <button class="nav-tab" data-view="set2">
+            📗 Set 2: Deep &amp; Applied <span class="count-pill" id="pill-set2">1500</span>
+          </button>
+          <button class="nav-tab" data-view="all">
+            📚 All Questions <span class="count-pill" id="pill-all">3000</span>
+          </button>
+          <button class="nav-tab" data-view="timeline">
+            📅 Year Chronology <span class="count-pill" id="pill-yr">Years</span>
+          </button>
+          <button class="nav-tab" data-view="plan">
+            🗓️ 4-Day Exam Plan
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Focus Mode Minimal HUD (Only visible when in Focus Mode) -->
+    <div id="focus-hud" class="focus-hud hidden">
+      <div class="focus-hud-inner">
+        <div class="focus-hud-left">
+          <span id="focus-counter" class="focus-counter">Q 1 / 1500</span>
+          <span id="focus-topic-chip" class="focus-topic-chip">Library History</span>
+        </div>
+        <div class="focus-hud-right">
+          <div class="segmented compact">
+            <button id="focus-mode-revise" class="seg-btn active">📖 Revise</button>
+            <button id="focus-mode-recall" class="seg-btn">🧠 Practice</button>
+          </div>
+          <div class="segmented compact">
+            <button class="seg-btn lang-btn active" data-lang="bi">हिं+EN</button>
+            <button class="seg-btn lang-btn" data-lang="hi">हिं</button>
+            <button class="seg-btn lang-btn" data-lang="en">EN</button>
+          </div>
+          <button id="focus-font-dec" class="icon-btn">A-</button>
+          <button id="focus-font-inc" class="icon-btn">A+</button>
+          <button class="icon-btn theme-cycle" id="focus-theme-cycle" title="Switch theme">📜</button>
+          <button id="btn-exit-focus" class="exit-focus-btn">✕ Exit Focus</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-content">
+      <!-- Filter & Progress Panel (Hidden in Timeline / Plan / Focus Modes) -->
+      <section id="controls-panel" class="controls-panel">
+        <div class="progress-banner">
+          <div class="progress-stats">
+            <span class="stat-item">✅ Revised: <strong id="stat-revised">0</strong> / <strong id="stat-total">3000</strong> (<span id="stat-pct">0%</span>)</span>
+            <span class="stat-item">📌 Bookmarked: <strong id="stat-bookmarked">0</strong></span>
+            <span class="stat-item" id="stat-showing-wrap">Showing: <strong id="stat-showing">0</strong></span>
+            <span id="day-filter-badge" class="day-active-pill hidden"></span>
+          </div>
+          <div class="progress-bar-track">
+            <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input id="search-input" type="search" placeholder="Search English / हिन्दी / Year (e.g. 1931, MARC, Ranganathan, धारा)..." autocomplete="off" />
+            <button id="btn-clear-search" class="clear-search hidden" aria-label="Clear search">✕</button>
+          </div>
+
+          <select id="topic-select" class="filter-select" aria-label="Filter by Topic">
+            <option value="all">All 12 Core LIS Topics (सभी विषय)</option>
+          </select>
+
+          <select id="priority-select" class="filter-select" aria-label="Filter by Priority">
+            <option value="all">All Priorities (सभी प्राथमिकताएँ)</option>
+            <option value="p1">⭐ Priority 1: Most Basic &amp; Essential</option>
+            <option value="p2">🔥 Priority 2: High-Frequency Core</option>
+            <option value="p3">📘 Priority 3: Standard Core</option>
+            <option value="p45">🔬 Priority 4–5: Deep &amp; Applied</option>
+            <option value="yr">📅 Questions with Year / Date Only</option>
+          </select>
+
+          <select id="status-select" class="filter-select" aria-label="Filter by Revision Status">
+            <option value="all">All Status</option>
+            <option value="unrevised">⏳ Unrevised Only</option>
+            <option value="bookmarked">📌 Bookmarked Only</option>
+            <option value="revised">✅ Revised Only</option>
+          </select>
+
+          <button id="btn-toggle-wrong" class="toggle-chip active" title="Toggle display of why the 3 wrong options are incorrect">
+            ❌ 3 Wrong Explanations: ON
+          </button>
+        </div>
+      </section>
+
+      <!-- Questions List / Focus View -->
+      <section id="practice-view" class="practice-view">
+        <div id="loading-card" class="status-card">
+          <div class="spinner"></div>
+          <p>Loading verified practice questions...</p>
+        </div>
+
+        <div id="questions-container" class="questions-container"></div>
+
+        <!-- List Pagination Controls -->
+        <div id="pagination-bar" class="pagination-bar hidden">
+          <button id="btn-prev-page" class="page-btn">← Previous</button>
+          <div class="page-info">
+            Page <strong id="page-current">1</strong> of <strong id="page-total">1</strong>
+            <span class="jump-wrap">
+              • Jump Q#: <input id="jump-q-input" type="number" min="1" placeholder="e.g. 50" />
+              <button id="btn-jump-q" class="mini-btn">Go</button>
+            </span>
+          </div>
+          <button id="btn-next-page" class="page-btn">Next →</button>
+        </div>
+
+        <!-- Focus Mode Bottom Controls -->
+        <div id="focus-nav-bar" class="focus-nav-bar hidden">
+          <button id="focus-prev" class="focus-nav-btn">← Prev</button>
+          <div class="focus-quick-actions">
+            <button id="focus-bookmark" class="focus-action-btn">📌 Bookmark</button>
+            <button id="focus-reveal" class="focus-action-btn hidden">👁️ Reveal</button>
+            <button id="focus-revise-mark" class="focus-action-btn primary">✅ Revised &amp; Next →</button>
+          </div>
+          <button id="focus-next" class="focus-nav-btn">Next →</button>
+        </div>
+      </section>
+
+      <!-- Chronology / Timeline View -->
+      <section id="timeline-view" class="timeline-view hidden">
+        <div class="section-intro">
+          <h2>📅 LIS Master Year Chronology (महत्वपूर्ण वर्ष एवं कालक्रम)</h2>
+          <p>Revise every landmark year across Library History, Acts, Classification, Cataloguing, Automation &amp; Networks in chronological order. Click any milestone to expand its verified practice questions.</p>
+          <div class="era-chips" id="era-chips">
+            <button class="era-chip active" data-era="all">All Years</button>
+            <button class="era-chip" data-era="pre1900">Before 1900</button>
+            <button class="era-chip" data-era="1900_1947">1900 – 1947</button>
+            <button class="era-chip" data-era="1948_1975">1948 – 1975</button>
+            <button class="era-chip" data-era="1976_1999">1976 – 1999</button>
+            <button class="era-chip" data-era="2000_plus">2000 – Present</button>
+          </div>
+          <div class="timeline-search-wrap">
+            <input id="timeline-search" type="search" placeholder="Filter timeline by year or event (e.g. 1931, DDC, ILA, Madras, Koha)..." />
+          </div>
+        </div>
+        <div id="timeline-container" class="timeline-container"></div>
+      </section>
+
+      <!-- 4-Day Rapid Revision Plan View -->
+      <section id="plan-view" class="plan-view hidden">
+        <div class="section-intro">
+          <h2>🗓️ 4-Day Bihar LET Crash Revision Roadmap (4 दिवसीय त्वरित अभ्यास योजना)</h2>
+          <p>Structured priority-first path from most essential basics (Day 1) through deep LIS standards &amp; IT (Day 4). Every question explains both why the answer is right and why the other three options are wrong.</p>
+        </div>
+        <div id="plan-grid" class="plan-grid"></div>
+        <div class="plan-tips-card">
+          <h3>⚡ Fast Recall Study Tips &amp; Keyboard Shortcuts</h3>
+          <ul>
+            <li><strong>Step 1:</strong> Start in <strong>📖 Revise Mode</strong> with <em>Sepia</em> theme to rapidly absorb correct answers + 3 wrong-option distinctions + years.</li>
+            <li><strong>Step 2:</strong> Switch to <strong>🎯 Focus View</strong> (Press <code>F</code> on desktop, or tap Focus button on mobile) to eliminate distractions.</li>
+            <li><strong>Step 3:</strong> Bookmark tricky dates or rules (<code>B</code>), then revisit <em>Bookmarked Only</em> in your evening recap, followed by a quick pass in <strong>🧠 Practice Mode</strong>.</li>
+            <li><strong>Desktop Keys:</strong> <code>←</code> / <code>→</code> Next/Prev Question • <code>Space</code> Reveal • <code>R</code> Mark Revised • <code>B</code> Bookmark • <code>F</code> Focus View • <code>Esc</code> Exit Focus.</li>
+          </ul>
+          <div class="storage-actions">
+            <button id="btn-reset-progress" class="danger-outline-btn">Reset Revision Progress</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

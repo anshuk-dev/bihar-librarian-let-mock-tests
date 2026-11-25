@@ -8,7 +8,8 @@
 
 A comprehensive, production-grade repository containing **50 Full-Length Bilingual (English & Hindi) Mock Test Booklets** for the **Bihar Library Eligibility Test (LET / SLET)** conducted by the **Bihar School Examination Board (BSEB)**.
 
-🌐 **Live Web Application (Desktop & Mobile):** [https://anshuk-dev.github.io/bihar-librarian-let-mock-tests/](https://anshuk-dev.github.io/bihar-librarian-let-mock-tests/)
+🌐 **Live 50-Mock CBT Portal (Desktop & Mobile):** [https://anshuk-dev.github.io/bihar-librarian-let-mock-tests/](https://anshuk-dev.github.io/bihar-librarian-let-mock-tests/)  
+📖 **New 3,000 Core LIS Practice Set & Year Chronology Web App (Inside This Repo -> [`practice/`](./practice/)):** [https://anshuk-dev.github.io/bihar-librarian-let-mock-tests/practice/](https://anshuk-dev.github.io/bihar-librarian-let-mock-tests/practice/) | Dedicated Repo: [bihar-let-practice](https://github.com/anshuk-dev/bihar-let-practice) ([Live App](https://anshuk-dev.github.io/bihar-let-practice/))
 
 ---
 
